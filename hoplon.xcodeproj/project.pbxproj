@@ -15,6 +15,8 @@
 		36210592238B2D09008240B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36210590238B2D09008240B2 /* LaunchScreen.storyboard */; };
 		3621059D238B2D09008240B2 /* hoplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621059C238B2D09008240B2 /* hoplonTests.swift */; };
 		362105A8238B2D09008240B2 /* hoplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105A7238B2D09008240B2 /* hoplonUITests.swift */; };
+		362105B6238B354E008240B2 /* LendAndBorrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105B5238B354E008240B2 /* LendAndBorrowView.swift */; };
+		362105B8238B3646008240B2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105B7238B3646008240B2 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		362105A3238B2D09008240B2 /* hoplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoplonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362105A7238B2D09008240B2 /* hoplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoplonUITests.swift; sourceTree = "<group>"; };
 		362105A9238B2D09008240B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362105B5238B354E008240B2 /* LendAndBorrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrowView.swift; sourceTree = "<group>"; };
+		362105B7238B3646008240B2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				36210585238B2D08008240B2 /* AppDelegate.swift */,
 				36210587238B2D08008240B2 /* SceneDelegate.swift */,
 				36210589238B2D08008240B2 /* ContentView.swift */,
+				362105B5238B354E008240B2 /* LendAndBorrowView.swift */,
+				362105B7238B3646008240B2 /* SettingsView.swift */,
 				3621058B238B2D09008240B2 /* Assets.xcassets */,
 				36210590238B2D09008240B2 /* LaunchScreen.storyboard */,
 				36210593238B2D09008240B2 /* Info.plist */,
@@ -267,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362105B8238B3646008240B2 /* SettingsView.swift in Sources */,
 				36210586238B2D08008240B2 /* AppDelegate.swift in Sources */,
 				36210588238B2D08008240B2 /* SceneDelegate.swift in Sources */,
+				362105B6238B354E008240B2 /* LendAndBorrowView.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

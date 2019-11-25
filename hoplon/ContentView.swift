@@ -12,22 +12,22 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-        TabView(selection: $selection){
-            Text("First View")
+        TabView(selection: $selection) {
+            LendAndBorrowView()
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("first")
-                        Text("First")
+                        Text("Lend & Borrow")
                     }
                 }
                 .tag(0)
-            Text("Second View")
+            SettingsView()
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image("second")
-                        Text("Second")
+                        Text("Settings")
                     }
                 }
                 .tag(1)
