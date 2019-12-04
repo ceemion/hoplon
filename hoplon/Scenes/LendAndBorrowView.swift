@@ -19,17 +19,18 @@ struct LendAndBorrowView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: true) {
-                VStack {
+                VStack(alignment: .leading) {
                     HStack {
-                        SummaryView(amount: "230,000k")
+                        SummaryView(type: "lent", amount: "230,000k", time: "3 hours ago")
                             .padding()
-                            .border(Color.green)
-                            .foregroundColor(Color.green)
-                        Spacer()
-                        SummaryView(amount: "2.3k")
+                            .background(Color("success").opacity(0.15))
+                            .cornerRadius(10)
+                            .foregroundColor(Color.black)
+                        SummaryView(type: "borrowed", amount: "2.3k", time: "3 months ago")
                             .padding()
-                            .border(Color.red)
-                            .foregroundColor(Color.red)
+                            .background(Color("danger").opacity(0.15))
+                            .cornerRadius(10)
+                            .foregroundColor(Color.black)
                     }
 
                     VStack(alignment: .center, spacing: 10) {
@@ -53,10 +54,17 @@ struct LendAndBorrowView: View {
 }
 
 struct SummaryView: View {
+    let type: String
     let amount: String
+    let time: String
 
     var body: some View {
-        Text(amount)
+        VStack(alignment: .leading, spacing: 10) {
+            Text(self.amount)
+            Text(self.type)
+            Text(self.time)
+        }
+        .font(.body)
     }
 }
 
