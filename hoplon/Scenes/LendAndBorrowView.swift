@@ -12,13 +12,6 @@ struct LendAndBorrowView: View {
 
     @ObservedObject var contactsVM = ContactsViewModel()
 
-    let contacts: [Contact] = [
-        .init(id: 1, user_id: 1, first_name: "Simeon", last_name: "Logik", email: "sl@email.com", phone_number: "0812", lendborrow_count: 3),
-        .init(id: 2, user_id: 1, first_name: "Jinx", last_name: "King", email: "sl@email.com", phone_number: "0812", lendborrow_count: 0),
-        .init(id: 3, user_id: 1, first_name: "Joy", last_name: "Peace", email: "sl@email.com", phone_number: "0812", lendborrow_count: 34),
-        .init(id: 4, user_id: 1, first_name: "Jt", last_name: "E", email: "sl@email.com", phone_number: "0812", lendborrow_count: 34)
-    ]
-
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: true) {
@@ -37,7 +30,7 @@ struct LendAndBorrowView: View {
                     }
 
                     VStack(alignment: .center, spacing: 10) {
-                        ForEach(contacts) { contact in
+                        ForEach(contactsVM.contacts, id: \.id) { contact in
                             ContactRowView(contact: contact)
                                 .font(.body)
                                 .padding()
@@ -63,6 +56,10 @@ struct SummaryView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Spacer()
+            }
+
             Text(self.amount)
             Text(self.type)
             Text(self.time)
