@@ -43,13 +43,15 @@ struct LendAndBorrowView: View {
 
                     VStack(alignment: .center, spacing: 10) {
                         ForEach(lnbVM.contacts, id: \.id) { contact in
-                            ContactRowView(contact: contact)
-                                .font(.body)
-                                .padding()
-                                .background(Color("rowsBg"))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                            NavigationLink(destination: ContactDetailsView()) {
+                                ContactRowView(contact: contact)
+                                    .font(.body)
+                                    .padding()
+                                    .background(Color("rowsBg"))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                            }
                         }
                     }
                     .padding(.top, 10)
