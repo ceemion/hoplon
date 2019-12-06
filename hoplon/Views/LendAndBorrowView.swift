@@ -10,36 +10,38 @@ import SwiftUI
 
 struct LendAndBorrowView: View {
 
-    @ObservedObject var contactsVM = ContactsViewModel()
+    @ObservedObject var lnbVM = LendAndBorrowViewModel()
 
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(alignment: .leading) {
-                    HStack {
-                        SummaryView(type: "lent", amount: "230,000k", time: "3 hours ago")
-                            .padding()
-                            .background(Color("success").opacity(0.15))
-                            .cornerRadius(10)
-                            .foregroundColor(Color.black)
-                        SummaryView(type: "borrowed", amount: "2.3k", time: "3 months ago")
-                            .padding()
-                            .background(Color("danger").opacity(0.15))
-                            .cornerRadius(10)
-                            .foregroundColor(Color.black)
+                    HStack(alignment: .top, spacing: 10) {
+                        SummaryView(
+                            type: "lent",
+                            amount: lnbVM.totalLent,
+                            time: "3 hours ago",
+                            color: "success")
+
+                        SummaryView(
+                            type: "borrowed",
+                            amount: lnbVM.totalBorrowed,
+                            time: "3 months ago",
+                            color: "danger")
                     }
 
                     VStack(alignment: .center, spacing: 10) {
-                        ForEach(contactsVM.contacts, id: \.id) { contact in
+                        ForEach(lnbVM.contacts, id: \.id) { contact in
                             ContactRowView(contact: contact)
                                 .font(.body)
                                 .padding()
-                                .background(Color.white)
+                                .background(Color("rowsBg"))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
                         }
                     }
+                    .padding(.top, 10)
                 }
                 .padding(10)
                 .background(Color("sceneBg"))
@@ -51,8 +53,9 @@ struct LendAndBorrowView: View {
 
 struct SummaryView: View {
     let type: String
-    let amount: String
+    let amount: Int
     let time: String
+    let color: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -60,11 +63,15 @@ struct SummaryView: View {
                 Spacer()
             }
 
-            Text(self.amount)
+            Text(String(self.amount))
             Text(self.type)
             Text(self.time)
         }
         .font(.body)
+        .foregroundColor(Color(color))
+        .padding()
+        .background(Color(color).opacity(0.1))
+        .cornerRadius(10)
     }
 }
 
