@@ -23,6 +23,7 @@
 		3651403A23995D5800CABF31 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403923995D5800CABF31 /* ContactsViewModel.swift */; };
 		3651403D2399CF1600CABF31 /* Aggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403C2399CF1600CABF31 /* Aggregator.swift */; };
 		3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */; };
+		36514041239A4E6300CABF31 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514040239A4E6300CABF31 /* AddNewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		3651403923995D5800CABF31 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		3651403C2399CF1600CABF31 /* Aggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregator.swift; sourceTree = "<group>"; };
 		3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrowViewModel.swift; sourceTree = "<group>"; };
+		36514040239A4E6300CABF31 /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				362105B5238B354E008240B2 /* LendAndBorrowView.swift */,
 				362105B7238B3646008240B2 /* SettingsView.swift */,
+				36514040239A4E6300CABF31 /* AddNewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				365140302399578B00CABF31 /* Constants.swift in Sources */,
 				365140332399581000CABF31 /* HttpService.swift in Sources */,
 				362105B6238B354E008240B2 /* LendAndBorrowView.swift in Sources */,
+				36514041239A4E6300CABF31 /* AddNewView.swift in Sources */,
 				3651403A23995D5800CABF31 /* ContactsViewModel.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,
 			);

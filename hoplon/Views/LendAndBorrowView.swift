@@ -12,6 +12,17 @@ struct LendAndBorrowView: View {
 
     @ObservedObject var lnbVM = LendAndBorrowViewModel()
 
+    @State var showAddSheet = false
+
+    var addButton: some View {
+        Button(action: { self.showAddSheet.toggle() }) {
+            Image(systemName: "plus")
+                .imageScale(.small)
+                .accessibility(label: Text("Add New"))
+                .padding()
+        }
+    }
+
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: true) {
@@ -47,6 +58,10 @@ struct LendAndBorrowView: View {
                 .background(Color("sceneBg"))
             }
             .navigationBarTitle(Text("Lend & Borrow"))
+            .navigationBarItems(trailing: addButton)
+            .sheet(isPresented: $showAddSheet) {
+                AddNewView()
+            }
         }
     }
 }
