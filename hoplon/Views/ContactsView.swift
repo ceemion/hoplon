@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LendAndBorrowView: View {
+struct ContactsView: View {
 
     @ObservedObject var lnbVM = LendAndBorrowViewModel()
 
@@ -16,9 +16,9 @@ struct LendAndBorrowView: View {
 
     var addButton: some View {
         Button(action: { self.showAddSheet.toggle() }) {
-            Image(systemName: "plus")
+            Image(systemName: "person.badge.plus")
                 .imageScale(.small)
-                .accessibility(label: Text("Add New"))
+                .accessibility(label: Text("New Contacts"))
                 .padding()
         }
     }
@@ -105,8 +105,8 @@ struct ContactRowView: View {
     }
 }
 
-struct LendAndBorrowView_Previews: PreviewProvider {
+struct ContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        LendAndBorrowView()
+        ContactsView()
     }
 }

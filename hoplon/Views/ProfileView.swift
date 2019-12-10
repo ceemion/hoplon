@@ -8,14 +8,17 @@
 
 import SwiftUI
 
-struct SettingsView: View {
+struct ProfileView: View {
     var body: some View {
-        Text("Hello SettingsView!")
+        NavigationView {
+            Text("Hello Profile View!")
+                .navigationBarTitle("Profile")
+        }
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        ProfileView()
     }
 }

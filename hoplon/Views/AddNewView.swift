@@ -79,7 +79,7 @@ struct AddNewView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) { Text("Save") }
             )
-            .background(Color.white)
+            .background(Color("sceneBg"))
         }
     }
 }

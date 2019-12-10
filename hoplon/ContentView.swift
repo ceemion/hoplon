@@ -13,21 +13,21 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection) {
-            LendAndBorrowView()
+            ContactsView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("first")
-                        Text("Lend & Borrow")
+                        Image(systemName: "person.3")
+                        Text("My Contacts")
                     }
                 }
                 .tag(0)
-            SettingsView()
+            ProfileView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("second")
-                        Text("Settings")
+                        Image(systemName: "gear")
+                        Text("Profile")
                     }
                 }
                 .tag(1)
