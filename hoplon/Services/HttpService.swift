@@ -92,4 +92,55 @@ class HttpService {
 
        task.resume()
    }
+
+    func postLendBorrows (payload: LBPayload) {
+        let url = URL(string: "")!
+
+        guard let httpBody = try? JSONEncoder().encode(payload) else { return }
+
+        var request = URLRequest(url: url)
+
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = httpBody
+
+        let sharedSession = URLSession.shared
+        let task = sharedSession.dataTask(with: request) { data, response, error in
+
+            if let error = error {
+                print("my Client Error")
+                print(error)
+                
+                //DispatchQueue.main.async {
+                //    self.handleClientError(error.localizedDescription)
+                //}
+
+                return
+            }
+
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                    print("my Server Response")
+                    print(response as Any)
+
+                    //DispatchQueue.main.async {
+                    //    self.handleServerError(response)
+                    //}
+
+                    return
+            }
+
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: [])
+                DispatchQueue.main.async {
+                }
+
+                print("Response Data: ", json)
+            } catch {
+                print("Catch json serialization error.")
+            }
+        }
+
+        task.resume()
+    }
 }

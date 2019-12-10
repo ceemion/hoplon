@@ -33,6 +33,12 @@ final class LendAndBorrowViewModel: ObservableObject {
         }
     }
 
+    private func formatDate(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.string(from: date)
+    }
+
     func resetForm() {
         self.type = "lent"
         self.name = ""
@@ -43,7 +49,16 @@ final class LendAndBorrowViewModel: ObservableObject {
     }
 
     func save() {
-        print("save data: \(type) \(name)")
+        print("save data: \(type) \(amount) \(formatDate(dueDate))")
+        _ = LBPayload(
+            amount: self.amount,
+            contact_id: 2,
+            status: "pending",
+            date_due: formatDate(self.dueDate),
+            date: formatDate(self.lentOn),
+            lb_type: self.type,
+            notes: self.notes
+        )
         self.resetForm()
     }
 }
