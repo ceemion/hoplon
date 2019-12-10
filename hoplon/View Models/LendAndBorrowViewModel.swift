@@ -13,7 +13,7 @@ final class LendAndBorrowViewModel: ObservableObject {
     @Published var totalLent: Int = 0
     @Published var totalBorrowed: Int = 0
     @Published var contacts = [Contact]()
-    
+
     @Published var type = "lent"
     @Published var name: String = ""
     @Published var amount: String = ""
@@ -33,7 +33,17 @@ final class LendAndBorrowViewModel: ObservableObject {
         }
     }
 
+    func resetForm() {
+        self.type = "lent"
+        self.name = ""
+        self.amount = ""
+        self.dueDate = Date()
+        self.notes = ""
+        self.lentOn = Date()
+    }
+
     func save() {
         print("save data: \(type) \(name)")
+        self.resetForm()
     }
 }

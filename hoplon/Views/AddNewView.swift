@@ -13,8 +13,9 @@ struct AddNewView: View {
     init(){
         UITableView.appearance().backgroundColor = .clear
     }
-    
+
     @EnvironmentObject var model: LendAndBorrowViewModel
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationView {
@@ -69,11 +70,16 @@ struct AddNewView: View {
             }
             .navigationBarTitle(Text("Lent or Borrowed?"), displayMode: .inline)
             .navigationBarItems(
-                leading: Text("Cancel"),
-                trailing: Button(action: { self.model.save() }) { Text("Save") }
+                leading: Button(action: {
+                    self.model.resetForm()
+                    self.presentationMode.wrappedValue.dismiss()
+                }) { Text("Cancel") },
+                trailing: Button(action: {
+                    self.model.save()
+                    self.presentationMode.wrappedValue.dismiss()
+                }) { Text("Save") }
             )
             .background(Color.white)
-                    
         }
     }
 }
