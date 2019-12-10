@@ -13,6 +13,13 @@ final class LendAndBorrowViewModel: ObservableObject {
     @Published var totalLent: Int = 0
     @Published var totalBorrowed: Int = 0
     @Published var contacts = [Contact]()
+    
+    @Published var type = "lent"
+    @Published var name: String = ""
+    @Published var amount: String = ""
+    @Published var dueDate = Date()
+    @Published var notes: String = ""
+    @Published var lentOn = Date()
 
     init() {
         fetch()

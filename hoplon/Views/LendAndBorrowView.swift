@@ -61,9 +61,10 @@ struct LendAndBorrowView: View {
             }
             .navigationBarTitle(Text("Lend & Borrow"))
             .navigationBarItems(trailing: addButton)
-            .sheet(isPresented: $showAddSheet) {
-                AddNewView()
-            }
+        }
+        .sheet(isPresented: $showAddSheet) {
+            AddNewView()
+                .environmentObject(self.lnbVM)
         }
     }
 }

@@ -11,7 +11,7 @@ import Foundation
 struct Constants {
 
     struct Http {
-        static let isLive = true
+        static let isLive = false
         static let BASE_URL = isLive ? "https://my-forecast-api.herokuapp.com/api/v1" : "http://localhost:5001/api/v1"
     }
 }

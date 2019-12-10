@@ -164,9 +164,9 @@
 		3651402B2396E85D00CABF31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36514040239A4E6300CABF31 /* AddNewView.swift */,
 				362105B5238B354E008240B2 /* LendAndBorrowView.swift */,
 				362105B7238B3646008240B2 /* SettingsView.swift */,
-				36514040239A4E6300CABF31 /* AddNewView.swift */,
 				36514044239A934200CABF31 /* ContactDetailsView.swift */,
 			);
 			path = Views;
