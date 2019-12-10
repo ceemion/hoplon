@@ -11,5 +11,5 @@ import Foundation
 struct Aggregator: Codable {
     let total_lent: Int
     let total_borrowed: Int
-    let contacts: [Contact]
+    let contacts: [Person]
 }

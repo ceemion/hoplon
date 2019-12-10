@@ -53,7 +53,7 @@ class HttpService {
         task.resume()
     }
 
-    func getContacts(_ completion: @escaping ([Contact]) -> ()) {
+    func getPersons(_ completion: @escaping ([Person]) -> ()) {
         let url = URL(string: contactsUrl)!
 
         let sharedSession = URLSession.shared
@@ -81,7 +81,7 @@ class HttpService {
                    return
            }
 
-           if let json = try? JSONDecoder().decode([Contact].self, from: data!) {
+           if let json = try? JSONDecoder().decode([Person].self, from: data!) {
                print("la json: ", json)
 
                DispatchQueue.main.async {

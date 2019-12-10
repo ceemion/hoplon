@@ -10,10 +10,6 @@ import Foundation
 
 final class LendAndBorrowViewModel: ObservableObject {
 
-    @Published var totalLent: Int = 0
-    @Published var totalBorrowed: Int = 0
-    @Published var contacts = [Contact]()
-
     @Published var type = "lent"
     @Published var name: String = ""
     @Published var amount: String = ""
@@ -22,15 +18,11 @@ final class LendAndBorrowViewModel: ObservableObject {
     @Published var lentOn = Date()
 
     init() {
-        fetch()
+        //fetch()
     }
 
     private func fetch() {
-        HttpService().getAggregators { (aggregators) in
-            self.totalLent = aggregators.total_lent
-            self.totalBorrowed = aggregators.total_borrowed
-            self.contacts = aggregators.contacts
-        }
+        
     }
 
     private func formatDate(_ date: Date) -> String {

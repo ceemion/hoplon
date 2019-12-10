@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contact: Identifiable, Codable {
+struct Person: Identifiable, Codable {
     let id: Int
     let user_id: Int
     let first_name, last_name, email, phone_number: String

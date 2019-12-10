@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct ContactsView: View {
+struct PersonsView: View {
 
-    @ObservedObject var lnbVM = LendAndBorrowViewModel()
+    @ObservedObject var persons = PersonsViewModel()
 
     @State var showAddSheet = false
 
@@ -30,21 +30,21 @@ struct ContactsView: View {
                     HStack(alignment: .top, spacing: 10) {
                         SummaryView(
                             type: "lent",
-                            amount: lnbVM.totalLent,
+                            amount: persons.totalLent,
                             time: "3 hours ago",
                             color: "success")
 
                         SummaryView(
                             type: "borrowed",
-                            amount: lnbVM.totalBorrowed,
+                            amount: persons.totalBorrowed,
                             time: "3 months ago",
                             color: "danger")
                     }
 
                     VStack(alignment: .center, spacing: 10) {
-                        ForEach(lnbVM.contacts, id: \.id) { contact in
+                        ForEach(persons.persons, id: \.id) { person in
                             NavigationLink(destination: ContactDetailsView()) {
-                                ContactRowView(contact: contact)
+                                RowView(person: person)
                                     .font(.body)
                                     .padding()
                                     .background(Color("rowsBg"))
@@ -63,8 +63,8 @@ struct ContactsView: View {
             .navigationBarItems(trailing: addButton)
         }
         .sheet(isPresented: $showAddSheet) {
-            AddNewView()
-                .environmentObject(self.lnbVM)
+            NewPersonView()
+                .environmentObject(self.persons)
         }
     }
 }
@@ -93,20 +93,20 @@ struct SummaryView: View {
     }
 }
 
-struct ContactRowView: View {
-    let contact: Contact
+struct RowView: View {
+    let person: Person
 
     var body: some View {
         HStack {
-            Text("\(contact.first_name) \(contact.last_name)")
+            Text("\(person.first_name) \(person.last_name)")
             Spacer()
-            Text(String(contact.lendborrow_count))
+            Text(String(person.lendborrow_count))
         }
     }
 }
 
-struct ContactsView_Previews: PreviewProvider {
+struct PersonsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactsView()
+        PersonsView()
     }
 }

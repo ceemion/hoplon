@@ -15,18 +15,18 @@
 		36210592238B2D09008240B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36210590238B2D09008240B2 /* LaunchScreen.storyboard */; };
 		3621059D238B2D09008240B2 /* hoplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621059C238B2D09008240B2 /* hoplonTests.swift */; };
 		362105A8238B2D09008240B2 /* hoplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105A7238B2D09008240B2 /* hoplonUITests.swift */; };
-		362105B6238B354E008240B2 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105B5238B354E008240B2 /* ContactsView.swift */; };
+		362105B6238B354E008240B2 /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105B5238B354E008240B2 /* PersonsView.swift */; };
 		362105B8238B3646008240B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362105B7238B3646008240B2 /* ProfileView.swift */; };
-		3651402D239732D200CABF31 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651402C239732D200CABF31 /* Contact.swift */; };
+		3651402D239732D200CABF31 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651402C239732D200CABF31 /* Person.swift */; };
 		365140302399578B00CABF31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651402F2399578B00CABF31 /* Constants.swift */; };
 		365140332399581000CABF31 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365140322399581000CABF31 /* HttpService.swift */; };
-		3651403A23995D5800CABF31 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403923995D5800CABF31 /* ContactsViewModel.swift */; };
+		3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403923995D5800CABF31 /* PersonsViewModel.swift */; };
 		3651403D2399CF1600CABF31 /* Aggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403C2399CF1600CABF31 /* Aggregator.swift */; };
 		3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */; };
 		36514041239A4E6300CABF31 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514040239A4E6300CABF31 /* AddNewView.swift */; };
 		36514045239A934200CABF31 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514044239A934200CABF31 /* ContactDetailsView.swift */; };
 		36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63742239F25D80045C6E5 /* LendAndBorrow.swift */; };
-		36C63745239F2CFC0045C6E5 /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewContactView.swift */; };
+		36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewPersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,18 +61,18 @@
 		362105A3238B2D09008240B2 /* hoplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoplonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362105A7238B2D09008240B2 /* hoplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoplonUITests.swift; sourceTree = "<group>"; };
 		362105A9238B2D09008240B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		362105B5238B354E008240B2 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		362105B5238B354E008240B2 /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
 		362105B7238B3646008240B2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		3651402C239732D200CABF31 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		3651402C239732D200CABF31 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3651402F2399578B00CABF31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		365140322399581000CABF31 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
-		3651403923995D5800CABF31 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		3651403923995D5800CABF31 /* PersonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewModel.swift; sourceTree = "<group>"; };
 		3651403C2399CF1600CABF31 /* Aggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregator.swift; sourceTree = "<group>"; };
 		3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrowViewModel.swift; sourceTree = "<group>"; };
 		36514040239A4E6300CABF31 /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
 		36514044239A934200CABF31 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		36C63742239F25D80045C6E5 /* LendAndBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrow.swift; sourceTree = "<group>"; };
-		36C63744239F2CFC0045C6E5 /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		36C63744239F2CFC0045C6E5 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				36514040239A4E6300CABF31 /* AddNewView.swift */,
-				362105B5238B354E008240B2 /* ContactsView.swift */,
+				362105B5238B354E008240B2 /* PersonsView.swift */,
 				362105B7238B3646008240B2 /* ProfileView.swift */,
 				36514044239A934200CABF31 /* ContactDetailsView.swift */,
-				36C63744239F2CFC0045C6E5 /* NewContactView.swift */,
+				36C63744239F2CFC0045C6E5 /* NewPersonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 		3651402E239732DC00CABF31 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3651402C239732D200CABF31 /* Contact.swift */,
+				3651402C239732D200CABF31 /* Person.swift */,
 				3651403C2399CF1600CABF31 /* Aggregator.swift */,
 				36C63742239F25D80045C6E5 /* LendAndBorrow.swift */,
 			);
@@ -206,7 +206,7 @@
 		3651403B23995D6300CABF31 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				3651403923995D5800CABF31 /* ContactsViewModel.swift */,
+				3651403923995D5800CABF31 /* PersonsViewModel.swift */,
 				3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */,
 			);
 			path = "View Models";
@@ -344,8 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36514045239A934200CABF31 /* ContactDetailsView.swift in Sources */,
-				3651402D239732D200CABF31 /* Contact.swift in Sources */,
-				36C63745239F2CFC0045C6E5 /* NewContactView.swift in Sources */,
+				3651402D239732D200CABF31 /* Person.swift in Sources */,
+				36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */,
 				362105B8238B3646008240B2 /* ProfileView.swift in Sources */,
 				36210586238B2D08008240B2 /* AppDelegate.swift in Sources */,
 				36210588238B2D08008240B2 /* SceneDelegate.swift in Sources */,
@@ -353,10 +353,10 @@
 				3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */,
 				365140302399578B00CABF31 /* Constants.swift in Sources */,
 				365140332399581000CABF31 /* HttpService.swift in Sources */,
-				362105B6238B354E008240B2 /* ContactsView.swift in Sources */,
+				362105B6238B354E008240B2 /* PersonsView.swift in Sources */,
 				36514041239A4E6300CABF31 /* AddNewView.swift in Sources */,
 				36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */,
-				3651403A23995D5800CABF31 /* ContactsViewModel.swift in Sources */,
+				3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
