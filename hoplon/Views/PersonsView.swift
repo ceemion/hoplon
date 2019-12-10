@@ -18,7 +18,16 @@ struct PersonsView: View {
         Button(action: { self.showAddSheet.toggle() }) {
             Image(systemName: "person.badge.plus")
                 .imageScale(.small)
-                .accessibility(label: Text("New Contacts"))
+                .accessibility(label: Text("New Person"))
+                .padding()
+        }
+    }
+
+    var refreshButton: some View {
+        Button(action: { self.persons.fetchAggregators() }) {
+            Image(systemName: "arrow.clockwise")
+                .imageScale(.small)
+                .accessibility(label: Text("Refresh Persons"))
                 .padding()
         }
     }
@@ -60,7 +69,7 @@ struct PersonsView: View {
                 .background(Color("sceneBg"))
             }
             .navigationBarTitle(Text("Lend & Borrow"))
-            .navigationBarItems(trailing: addButton)
+            .navigationBarItems(leading: refreshButton, trailing: addButton)
         }
         .sheet(isPresented: $showAddSheet) {
             NewPersonView()

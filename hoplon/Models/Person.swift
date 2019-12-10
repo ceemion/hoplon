@@ -14,3 +14,10 @@ struct Person: Identifiable, Codable {
     let first_name, last_name, email, phone_number: String
     let lendborrow_count: Int
 }
+
+struct PersonPayload: Codable {
+    let first_name: String
+    let last_name: String
+    let email: String
+    let phone_number: String
+}

@@ -84,26 +84,6 @@ struct AddNewView: View {
     }
 }
 
-struct Label: View {
-    let text: String
-
-    var body: some View {
-        Text(text.uppercased())
-            .font(.headline)
-    }
-}
-
-public struct HoplonTextFieldStyle : TextFieldStyle {
-    public func _body(configuration: TextField<Self._Label>) -> some View {
-        configuration
-            .font(.body)
-            .padding(10)
-            .background(
-                RoundedRectangle(cornerRadius: 5)
-                    .strokeBorder(Color.primary.opacity(0.1), lineWidth: 1))
-    }
-}
-
 struct AddNewView_Previews: PreviewProvider {
     static var previews: some View {
         AddNewView()

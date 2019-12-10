@@ -91,10 +91,10 @@ class HttpService {
        }
 
        task.resume()
-   }
+    }
 
-    func postLendBorrows (payload: LBPayload) {
-        let url = URL(string: "")!
+    func createPerson(_ payload: PersonPayload, _ completion: @escaping (Person) -> ()) {
+        let url = URL(string: contactsUrl)!
 
         guard let httpBody = try? JSONEncoder().encode(payload) else { return }
 
@@ -130,13 +130,12 @@ class HttpService {
                     return
             }
 
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: [])
+            if let json = try? JSONDecoder().decode(Person.self, from: data!) {
                 DispatchQueue.main.async {
+                    completion(json)
                 }
-
                 print("Response Data: ", json)
-            } catch {
+            } else {
                 print("Catch json serialization error.")
             }
         }

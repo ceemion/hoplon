@@ -16,16 +16,47 @@ struct NewPersonView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                Text("ok")
+                VStack(spacing: 20) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Label(text: "First Name")
+                        HStack(alignment: .center, spacing: 10) {
+                            TextField("", text: $model.firstname)
+                                .textFieldStyle(HoplonTextFieldStyle())
+                            Image(systemName: "person.badge.plus.fill")
+                                .imageScale(.large)
+                        }
+                    }
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        Label(text: "Last Name")
+                        TextField("", text: $model.lastname)
+                            .textFieldStyle(HoplonTextFieldStyle())
+                    }
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        Label(text: "Email")
+                        TextField("", text: $model.email)
+                            .keyboardType(.emailAddress)
+                            .textFieldStyle(HoplonTextFieldStyle())
+                    }
+
+                    VStack(alignment: .leading, spacing: 5) {
+                        Label(text: "Phone Number")
+                        TextField("", text: $model.phonenumber)
+                            .keyboardType(.phonePad)
+                            .textFieldStyle(HoplonTextFieldStyle())
+                    }
+                }
+                .padding(10)
             }
             .navigationBarTitle("New Person", displayMode: .inline)
             .navigationBarItems(
                 leading: Button(action: {
-//                    self.model.resetForm()
+                    self.model.clearForm()
                     self.presentationMode.wrappedValue.dismiss()
                 }) { Text("Cancel") },
                 trailing: Button(action: {
-//                    self.model.save()
+                    self.model.save()
                     self.presentationMode.wrappedValue.dismiss()
                 }) { Text("Save") }
             )
