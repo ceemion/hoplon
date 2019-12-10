@@ -32,4 +32,8 @@ final class LendAndBorrowViewModel: ObservableObject {
             self.contacts = aggregators.contacts
         }
     }
+
+    func save() {
+        print("save data: \(type) \(name)")
+    }
 }
