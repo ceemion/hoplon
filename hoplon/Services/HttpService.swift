@@ -82,7 +82,7 @@ class HttpService {
            }
 
            if let json = try? JSONDecoder().decode([Person].self, from: data!) {
-               print("la json: ", json)
+//               print("la json: ", json)
 
                DispatchQueue.main.async {
                    completion(json)

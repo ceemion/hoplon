@@ -21,18 +21,19 @@ final class PersonsViewModel: ObservableObject {
 
     init() {
         fetchAggregators()
+        fetchPersons()
     }
 
     func fetchAggregators() {
         HttpService().getAggregators { (aggregators) in
             self.totalLent = aggregators.total_lent
             self.totalBorrowed = aggregators.total_borrowed
-            self.persons = aggregators.contacts
         }
     }
 
-    private func fetchContacts() {
+    func fetchPersons() {
         HttpService().getPersons { (persons) in
+            print(persons)
             self.persons = persons
         }
     }

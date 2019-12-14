@@ -14,15 +14,6 @@ struct PersonsView: View {
 
     @State var showAddSheet = false
 
-    var addButton: some View {
-        Button(action: { self.showAddSheet.toggle() }) {
-            Image(systemName: "person.badge.plus")
-                .imageScale(.small)
-                .accessibility(label: Text("New Person"))
-                .padding()
-        }
-    }
-
     var refreshButton: some View {
         Button(action: { self.persons.fetchAggregators() }) {
             Image(systemName: "arrow.clockwise")
@@ -52,7 +43,7 @@ struct PersonsView: View {
 
                     VStack(alignment: .center, spacing: 10) {
                         ForEach(persons.persons, id: \.id) { person in
-                            NavigationLink(destination: ContactDetailsView()) {
+//                            NavigationLink(destination: PersonDetailsView(person: person)) {
                                 RowView(person: person)
                                     .font(.body)
                                     .padding()
@@ -60,7 +51,7 @@ struct PersonsView: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
-                            }
+//                            }
                         }
                     }
                     .padding(.top, 10)
@@ -69,11 +60,27 @@ struct PersonsView: View {
                 .background(Color("sceneBg"))
             }
             .navigationBarTitle(Text("Lend & Borrow"))
-            .navigationBarItems(leading: refreshButton, trailing: addButton)
+            .navigationBarItems(
+                leading: refreshButton,
+                trailing: AddButton(showAddSheet: $showAddSheet)
+            )
         }
         .sheet(isPresented: $showAddSheet) {
             NewPersonView()
                 .environmentObject(self.persons)
+        }
+    }
+}
+
+struct AddButton: View {
+    @Binding var showAddSheet: Bool
+
+    var body: some View {
+        Button(action: { self.showAddSheet.toggle() }) {
+            Image(systemName: "person.badge.plus")
+                .imageScale(.small)
+                .accessibility(label: Text("New Person"))
+                .padding()
         }
     }
 }
@@ -109,7 +116,7 @@ struct RowView: View {
         HStack {
             Text("\(person.first_name) \(person.last_name)")
             Spacer()
-            Text(String(person.lendborrow_count))
+            Text(String(person.data.count))
         }
     }
 }

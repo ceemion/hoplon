@@ -11,8 +11,13 @@ import Foundation
 struct Person: Identifiable, Codable {
     let id: Int
     let user_id: Int
-    let first_name, last_name, email, phone_number: String
-    let lendborrow_count: Int
+    let first_name: String
+    let last_name: String
+    let email: String
+    let phone_number: String
+    let total_lent: Double
+    let total_borrowed: Double
+    let data: [LendBorrow]
 }
 
 struct PersonPayload: Codable {

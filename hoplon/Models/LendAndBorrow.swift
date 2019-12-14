@@ -8,6 +8,20 @@
 
 import Foundation
 
+struct LendBorrow: Codable {
+    let id: Int
+    let user_id: Int
+    let contact_id: Int
+    let amount: Double
+    let status: String
+    let date_due: String
+    let date: String
+    let deleted: Bool
+    let lb_type: String
+    let notes: String
+    let updated_at: String
+}
+
 struct LBPayload: Codable {
     let amount: String
     let contact_id: Int
