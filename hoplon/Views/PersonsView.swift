@@ -63,7 +63,8 @@ struct PersonsView: View {
                                     NavigationLink(destination: PersonDetailsView(person: person)) {
                                         RowView(person: person)
                                             .font(.body)
-                                            .padding()
+                                            .padding(.vertical, 20)
+                                            .padding(.horizontal, 10)
                                             .background(Color("rowsBg"))
                                             .overlay(
                                                 RoundedRectangle(cornerRadius: 10)
@@ -110,9 +111,12 @@ struct RowView: View {
     var body: some View {
         HStack {
             Text("\(person.first_name) \(person.last_name)")
+                .accentColor(Color("text"))
             Spacer()
             Text(String(person.data.count))
+                .accentColor(Color("text").opacity(0.5))
         }
+        .font(Font.custom(Constants.Font.main, size: CGFloat(Constants.TextSizes.body)))
     }
 }
 

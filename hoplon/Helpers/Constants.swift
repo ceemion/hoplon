@@ -16,6 +16,10 @@ struct Constants {
         static let main = "Helvetica"
     }
 
+    struct TextSizes {
+        static let body = 16.0
+    }
+
     struct Http {
         static let isLive = false
         static let BASE_URL = isLive ? "https://my-forecast-api.herokuapp.com/api/v1" : "http://localhost:5001/api/v1"
