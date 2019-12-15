@@ -59,8 +59,15 @@ struct PersonDetailsView: View {
 
                     VStack(alignment: .center, spacing: 10) {
                         if person.data.isEmpty {
-                            Text("You are all catch up")
-                                .font(.footnote)
+                            VStack(spacing: 10) {
+                                Text("No transactions here yet.")
+                                Text("Lent or Borrowed? Tap the plus icon up top to add a new entry.")
+                            }
+                            .font(.footnote)
+                            .foregroundColor(Color.gray)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .multilineTextAlignment(.center)
+                            .padding()
                         } else {
                             ForEach(person.data) { lb in
                                 LBRowView(lb: lb)

@@ -48,15 +48,27 @@ struct PersonsView: View {
                         }
 
                         VStack(alignment: .center, spacing: 10) {
-                            ForEach(persons.persons, id: \.id) { person in
-                                NavigationLink(destination: PersonDetailsView(person: person)) {
-                                    RowView(person: person)
-                                        .font(.body)
-                                        .padding()
-                                        .background(Color("rowsBg"))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                            if persons.persons.isEmpty {
+                                VStack(spacing: 10) {
+                                    Text("No persons here yet.")
+                                    Text("Lent or Borrowed? Add a new contact now.")
+                                }
+                                .font(.footnote)
+                                .foregroundColor(Color.gray)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                            } else {
+                                ForEach(persons.persons, id: \.id) { person in
+                                    NavigationLink(destination: PersonDetailsView(person: person)) {
+                                        RowView(person: person)
+                                            .font(.body)
+                                            .padding()
+                                            .background(Color("rowsBg"))
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                                    }
                                 }
                             }
                         }
