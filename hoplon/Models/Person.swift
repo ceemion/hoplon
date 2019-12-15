@@ -17,7 +17,7 @@ struct Person: Identifiable, Codable {
     let phone_number: String
     let total_lent: Double
     let total_borrowed: Double
-    let data: [LendBorrow]
+    var data: [LendBorrow]
 }
 
 struct PersonPayload: Codable {

@@ -12,6 +12,8 @@ struct PersonDetailsView: View {
 
     var person: Person
 
+    @State var openNew: Bool = false
+
     var body: some View {
         VStack {
             HStack {
@@ -82,15 +84,19 @@ struct PersonDetailsView: View {
             }
         }
         .navigationBarTitle(Text("\(person.first_name) \(person.last_name)"), displayMode: .inline)
-        .navigationBarItems(trailing: NewEntryButton())
+        .navigationBarItems(trailing: NewEntryButton(openNew: $openNew))
+        .sheet(isPresented: $openNew) {
+            NewLendBorrow()
+                .environmentObject(LendAndBorrowViewModel(person: self.person))
+        }
     }
 }
 
 struct NewEntryButton: View {
-//    @Binding var showAddSheet: Bool
+    @Binding var openNew: Bool
 
     var body: some View {
-        Button(action: { print("add btn tapped") }) {
+        Button(action: { self.openNew.toggle() }) {
             Image(systemName: "plus")
                 .imageScale(.small)
                 .accessibility(label: Text("New LendBorrow"))

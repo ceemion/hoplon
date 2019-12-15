@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct AddNewView: View {
+struct NewLendBorrow: View {
 
-    init(){
+    init() {
         UITableView.appearance().backgroundColor = .clear
     }
 
@@ -29,12 +29,9 @@ struct AddNewView: View {
 
                 Section {
                     Label(text: "Full Name")
-                    HStack(alignment: .center, spacing: 10) {
-                        TextField("", text: $model.name)
-                            .textFieldStyle(HoplonTextFieldStyle())
-                        Image(systemName: "person.badge.plus.fill")
-                            .imageScale(.large)
-                    }
+                    TextField("", text: $model.name)
+                        .disabled(true)
+                        .textFieldStyle(HoplonTextFieldStyle())
                 }
 
                 Section {
@@ -84,8 +81,8 @@ struct AddNewView: View {
     }
 }
 
-struct AddNewView_Previews: PreviewProvider {
+struct NewLendBorrow_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewView()
+        NewLendBorrow()
     }
 }

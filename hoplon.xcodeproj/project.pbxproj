@@ -23,12 +23,11 @@
 		3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403923995D5800CABF31 /* PersonsViewModel.swift */; };
 		3651403D2399CF1600CABF31 /* Aggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403C2399CF1600CABF31 /* Aggregator.swift */; };
 		3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */; };
-		36514041239A4E6300CABF31 /* AddNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514040239A4E6300CABF31 /* AddNewView.swift */; };
+		36514041239A4E6300CABF31 /* NewLendBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514040239A4E6300CABF31 /* NewLendBorrow.swift */; };
 		36514045239A934200CABF31 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514044239A934200CABF31 /* PersonDetailsView.swift */; };
 		36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63742239F25D80045C6E5 /* LendAndBorrow.swift */; };
 		36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewPersonView.swift */; };
 		36C63747239F38580045C6E5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63746239F38580045C6E5 /* Form.swift */; };
-		36C6374923A5A4240045C6E5 /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6374823A5A4240045C6E5 /* PersonDetailsViewModel.swift */; };
 		36C6374B23A5B83B0045C6E5 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6374A23A5B83B0045C6E5 /* SummaryView.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,12 +71,11 @@
 		3651403923995D5800CABF31 /* PersonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsViewModel.swift; sourceTree = "<group>"; };
 		3651403C2399CF1600CABF31 /* Aggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregator.swift; sourceTree = "<group>"; };
 		3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrowViewModel.swift; sourceTree = "<group>"; };
-		36514040239A4E6300CABF31 /* AddNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewView.swift; sourceTree = "<group>"; };
+		36514040239A4E6300CABF31 /* NewLendBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLendBorrow.swift; sourceTree = "<group>"; };
 		36514044239A934200CABF31 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		36C63742239F25D80045C6E5 /* LendAndBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrow.swift; sourceTree = "<group>"; };
 		36C63744239F2CFC0045C6E5 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 		36C63746239F38580045C6E5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
-		36C6374823A5A4240045C6E5 /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
 		36C6374A23A5B83B0045C6E5 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,10 +173,10 @@
 		3651402B2396E85D00CABF31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				36514040239A4E6300CABF31 /* AddNewView.swift */,
 				362105B5238B354E008240B2 /* PersonsView.swift */,
 				36514044239A934200CABF31 /* PersonDetailsView.swift */,
 				36C63744239F2CFC0045C6E5 /* NewPersonView.swift */,
+				36514040239A4E6300CABF31 /* NewLendBorrow.swift */,
 				362105B7238B3646008240B2 /* ProfileView.swift */,
 			);
 			path = Views;
@@ -216,7 +214,6 @@
 			children = (
 				3651403923995D5800CABF31 /* PersonsViewModel.swift */,
 				3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */,
-				36C6374823A5A4240045C6E5 /* PersonDetailsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -369,11 +366,10 @@
 				3651403D2399CF1600CABF31 /* Aggregator.swift in Sources */,
 				3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */,
 				365140302399578B00CABF31 /* Constants.swift in Sources */,
-				36C6374923A5A4240045C6E5 /* PersonDetailsViewModel.swift in Sources */,
 				36C63747239F38580045C6E5 /* Form.swift in Sources */,
 				365140332399581000CABF31 /* HttpService.swift in Sources */,
 				362105B6238B354E008240B2 /* PersonsView.swift in Sources */,
-				36514041239A4E6300CABF31 /* AddNewView.swift in Sources */,
+				36514041239A4E6300CABF31 /* NewLendBorrow.swift in Sources */,
 				36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */,
 				3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,

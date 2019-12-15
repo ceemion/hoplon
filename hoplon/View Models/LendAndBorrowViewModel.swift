@@ -10,9 +10,7 @@ import Foundation
 
 final class LendAndBorrowViewModel: ObservableObject {
 
-//    @Published var person: LendBorrowPerson
-    
-//    @Published var lendBorrow = [LendBorrow]()
+    @Published var person: Person
 
     @Published var type = "lent"
     @Published var name: String = ""
@@ -21,17 +19,10 @@ final class LendAndBorrowViewModel: ObservableObject {
     @Published var notes: String = ""
     @Published var lentOn = Date()
 
-//    init(id: Int) {
-//        fetch(id)
-//    }
-
-//    private func fetch(_ id: Int) {
-//        HttpService().getPerson(id) { (person) in
-////            print(person)
-////            self.person = person
-//            self.lendBorrow = person.data
-//        }
-//    }
+    init(person: Person) {
+        self.person = person
+        self.name = "\(person.first_name) \(person.last_name)"
+    }
 
     private func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
@@ -41,7 +32,6 @@ final class LendAndBorrowViewModel: ObservableObject {
 
     func resetForm() {
         self.type = "lent"
-        self.name = ""
         self.amount = ""
         self.dueDate = Date()
         self.notes = ""
@@ -49,16 +39,19 @@ final class LendAndBorrowViewModel: ObservableObject {
     }
 
     func save() {
-        print("save data: \(type) \(amount) \(formatDate(dueDate))")
-        _ = LBPayload(
+        let payload = LBPayload(
             amount: self.amount,
-            contact_id: 2,
+            contact_id: self.person.id,
             status: "pending",
             date_due: formatDate(self.dueDate),
             date: formatDate(self.lentOn),
             lb_type: self.type,
             notes: self.notes
         )
-        self.resetForm()
+
+        HttpService().createLendBorrow(payload) { (newRecord) in
+            self.person.data.append(newRecord)
+            self.resetForm()
+        }
     }
 }

@@ -12,7 +12,7 @@ struct PersonsView: View {
 
     @ObservedObject var persons = PersonsViewModel()
 
-    @State var showAddSheet = false
+    @State var showAddSheet: Bool = false
 
     var refreshButton: some View {
         Button(action: { self.persons.fetch() }) {
