@@ -14,6 +14,35 @@ struct PersonDetailsView: View {
 
     var body: some View {
         VStack {
+            HStack {
+                Button(action: { print("contact btn tapped") }) {
+                    Image(systemName: "phone")
+                        .imageScale(.small)
+                        .accessibility(label: Text("Call"))
+                }
+                Spacer()
+                Button(action: { print("contact btn tapped") }) {
+                    Image(systemName: "text.bubble")
+                        .imageScale(.small)
+                        .accessibility(label: Text("Text Message"))
+                }
+                Spacer()
+                Button(action: { print("contact btn tapped") }) {
+                    Image(systemName: "paperplane")
+                        .imageScale(.small)
+                        .accessibility(label: Text("Email"))
+                }
+                Spacer()
+                Button(action: { print("contact btn tapped") }) {
+                    Image(systemName: "bubble.left.and.bubble.right")
+                        .imageScale(.small)
+                        .accessibility(label: Text("Whatsapp"))
+                }
+            }
+            .padding(.top, 10)
+            .padding(.bottom, 5)
+            .padding(.horizontal, 20)
+
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(alignment: .leading) {
                     HStack(alignment: .top, spacing: 10) {
