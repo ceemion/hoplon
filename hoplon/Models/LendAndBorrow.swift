@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LendBorrow: Codable {
+struct LendBorrow: Codable, Identifiable {
     let id: Int
     let user_id: Int
     let contact_id: Int
