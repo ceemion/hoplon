@@ -54,7 +54,7 @@ final class PersonsViewModel: ObservableObject {
         let payload = PersonPayload(
             first_name: self.firstname,
             last_name: self.lastname,
-            email: self.email,
+            email: self.email.lowercased(),
             phone_number: self.phonenumber
         )
 

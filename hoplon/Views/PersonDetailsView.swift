@@ -17,7 +17,7 @@ struct PersonDetailsView: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: { print("contact btn tapped") }) {
+                Button(action: { phoneCallAction(self.person.phone_number) }) {
                     Image(systemName: "phone")
                         .imageScale(.small)
                         .accessibility(label: Text("Call"))
@@ -27,19 +27,19 @@ struct PersonDetailsView: View {
                     Image(systemName: "text.bubble")
                         .imageScale(.small)
                         .accessibility(label: Text("Text Message"))
-                }
+                }.foregroundColor(Color.gray)
                 Spacer()
                 Button(action: { print("contact btn tapped") }) {
                     Image(systemName: "paperplane")
                         .imageScale(.small)
                         .accessibility(label: Text("Email"))
-                }
+                }.foregroundColor(Color.gray)
                 Spacer()
                 Button(action: { print("contact btn tapped") }) {
                     Image(systemName: "bubble.left.and.bubble.right")
                         .imageScale(.small)
                         .accessibility(label: Text("Whatsapp"))
-                }
+                }.foregroundColor(Color.gray)
             }
             .padding(.top, 10)
             .padding(.bottom, 5)
@@ -127,6 +127,14 @@ struct LBRowView: View {
         .padding()
         .background(lb.lb_type == "lent" ? Color("success").opacity(0.1) : Color("danger").opacity(0.1))
         .cornerRadius(10)
+    }
+}
+
+private func phoneCallAction(_ n: String) {
+    if let number = URL(string: "tel://\(n)") {
+        if UIApplication.shared.canOpenURL(number) {
+            UIApplication.shared.open(number, options: [:], completionHandler: nil)
+        }
     }
 }
 
