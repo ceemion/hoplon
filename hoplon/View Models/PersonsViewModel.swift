@@ -11,8 +11,8 @@ import Foundation
 final class PersonsViewModel: ObservableObject {
 
     @Published var persons = [Person]()
-    @Published var totalLent: Int = 0
-    @Published var totalBorrowed: Int = 0
+    @Published var totalLent: Double = 0
+    @Published var totalBorrowed: Double = 0
 
     @Published var firstname: String = ""
     @Published var lastname: String = ""

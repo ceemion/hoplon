@@ -9,6 +9,6 @@
 import Foundation
 
 struct Aggregator: Codable {
-    let total_lent: Int
-    let total_borrowed: Int
+    let total_lent: Double
+    let total_borrowed: Double
 }

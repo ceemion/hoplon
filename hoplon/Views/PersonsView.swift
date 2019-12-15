@@ -29,15 +29,13 @@ struct PersonsView: View {
                 VStack(alignment: .leading) {
                     HStack(alignment: .top, spacing: 10) {
                         SummaryView(
-                            type: "lent",
+                            title: "lent",
                             amount: persons.totalLent,
-                            time: "3 hours ago",
                             color: "success")
 
                         SummaryView(
-                            type: "borrowed",
+                            title: "borrowed",
                             amount: persons.totalBorrowed,
-                            time: "3 months ago",
                             color: "danger")
                     }
 
@@ -82,30 +80,6 @@ struct AddButton: View {
                 .accessibility(label: Text("New Person"))
                 .padding()
         }
-    }
-}
-
-struct SummaryView: View {
-    let type: String
-    let amount: Int
-    let time: String
-    let color: String
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Spacer()
-            }
-
-            Text(String(self.amount))
-            Text(self.type)
-            Text(self.time)
-        }
-        .font(.body)
-        .foregroundColor(Color(color))
-        .padding()
-        .background(Color(color).opacity(0.1))
-        .cornerRadius(10)
     }
 }
 
