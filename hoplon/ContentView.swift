@@ -10,6 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font: UIFont(name: Constants.Font.nav, size: 34)!]
+        UINavigationBar.appearance().titleTextAttributes = [
+            .font: UIFont(name: Constants.Font.nav, size: 18)!]
+    }
  
     var body: some View {
         TabView(selection: $selection) {
@@ -32,6 +39,7 @@ struct ContentView: View {
                 }
                 .tag(1)
         }
+        .accentColor(Color("primary"))
     }
 }
 

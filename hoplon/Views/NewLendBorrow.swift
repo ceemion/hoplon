@@ -70,11 +70,13 @@ struct NewLendBorrow: View {
                 leading: Button(action: {
                     self.model.resetForm()
                     self.presentationMode.wrappedValue.dismiss()
-                }) { Text("Cancel") },
+                }) { Text("Cancel") }
+                    .accentColor(Color("primary")),
                 trailing: Button(action: {
                     self.model.save()
                     self.presentationMode.wrappedValue.dismiss()
                 }) { Text("Save") }
+                    .accentColor(Color("primary"))
             )
             .background(Color("sceneBg"))
         }
