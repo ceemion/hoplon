@@ -20,6 +20,10 @@ final class PersonsViewModel: ObservableObject {
     @Published var phonenumber: String = ""
 
     init() {
+        fetch()
+    }
+
+    func fetch() {
         fetchAggregators()
         fetchPersons()
     }
@@ -33,7 +37,6 @@ final class PersonsViewModel: ObservableObject {
 
     func fetchPersons() {
         HttpService().getPersons { (persons) in
-            print(persons)
             self.persons = persons
         }
     }

@@ -15,7 +15,7 @@ struct PersonsView: View {
     @State var showAddSheet = false
 
     var refreshButton: some View {
-        Button(action: { self.persons.fetchAggregators() }) {
+        Button(action: { self.persons.fetch() }) {
             Image(systemName: "arrow.clockwise")
                 .imageScale(.small)
                 .accessibility(label: Text("Refresh Persons"))
@@ -43,7 +43,7 @@ struct PersonsView: View {
 
                     VStack(alignment: .center, spacing: 10) {
                         ForEach(persons.persons, id: \.id) { person in
-//                            NavigationLink(destination: PersonDetailsView(person: person)) {
+                            NavigationLink(destination: PersonDetailsView(person: person)) {
                                 RowView(person: person)
                                     .font(.body)
                                     .padding()
@@ -51,7 +51,7 @@ struct PersonsView: View {
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
-//                            }
+                            }
                         }
                     }
                     .padding(.top, 10)

@@ -134,7 +134,7 @@ class HttpService {
                 DispatchQueue.main.async {
                     completion(json)
                 }
-                print("Response Data: ", json)
+                print("Create Response Data: ", json)
             } else {
                 print("Catch json serialization error.")
             }

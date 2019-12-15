@@ -8,15 +8,30 @@
 
 import SwiftUI
 
-struct ContactDetailsView: View {
+struct PersonDetailsView: View {
+
+    var person: Person
+
     var body: some View {
         Text("Hello contact details!")
-            .navigationBarTitle("Contact Details")
+            .navigationBarTitle(Text("\(person.first_name) \(person.last_name)"))
+            .navigationBarItems(trailing: Text("Add"))
     }
 }
 
-struct ContactDetailsView_Previews: PreviewProvider {
+struct PersonDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetailsView()
+        PersonDetailsView(
+            person: Person.init(
+                id: 0,
+                user_id: 0,
+                first_name: "",
+                last_name: "",
+                email: "",
+                phone_number: "",
+                total_lent: 0,
+                total_borrowed: 0,
+                data: [])
+        )
     }
 }

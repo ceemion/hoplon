@@ -10,6 +10,10 @@ import Foundation
 
 final class LendAndBorrowViewModel: ObservableObject {
 
+//    @Published var person: LendBorrowPerson
+    
+//    @Published var lendBorrow = [LendBorrow]()
+
     @Published var type = "lent"
     @Published var name: String = ""
     @Published var amount: String = ""
@@ -17,13 +21,17 @@ final class LendAndBorrowViewModel: ObservableObject {
     @Published var notes: String = ""
     @Published var lentOn = Date()
 
-    init() {
-        //fetch()
-    }
+//    init(id: Int) {
+//        fetch(id)
+//    }
 
-    private func fetch() {
-        
-    }
+//    private func fetch(_ id: Int) {
+//        HttpService().getPerson(id) { (person) in
+////            print(person)
+////            self.person = person
+//            self.lendBorrow = person.data
+//        }
+//    }
 
     private func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
