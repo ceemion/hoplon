@@ -13,6 +13,7 @@ final class PersonsViewModel: ObservableObject {
     @Published var persons = [Person]()
     @Published var totalLent: Double = 0
     @Published var totalBorrowed: Double = 0
+    @Published var loading: Bool = true
 
     @Published var firstname: String = ""
     @Published var lastname: String = ""
@@ -38,6 +39,7 @@ final class PersonsViewModel: ObservableObject {
     func fetchPersons() {
         HttpService().getPersons { (persons) in
             self.persons = persons
+            self.loading = false
         }
     }
 

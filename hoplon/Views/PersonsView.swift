@@ -26,36 +26,45 @@ struct PersonsView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: true) {
-                VStack(alignment: .leading) {
-                    HStack(alignment: .top, spacing: 10) {
-                        SummaryView(
-                            title: "lent",
-                            amount: persons.totalLent,
-                            color: "success")
-
-                        SummaryView(
-                            title: "borrowed",
-                            amount: persons.totalBorrowed,
-                            color: "danger")
+                if persons.loading {
+                    VStack {
+                        Text("Loading...")
+                            .font(.footnote)
+                            .foregroundColor(Color.gray)
+                            .padding()
                     }
+                } else {
+                    VStack(alignment: .leading) {
+                        HStack(alignment: .top, spacing: 10) {
+                            SummaryView(
+                                title: "lent",
+                                amount: persons.totalLent,
+                                color: "success")
 
-                    VStack(alignment: .center, spacing: 10) {
-                        ForEach(persons.persons, id: \.id) { person in
-                            NavigationLink(destination: PersonDetailsView(person: person)) {
-                                RowView(person: person)
-                                    .font(.body)
-                                    .padding()
-                                    .background(Color("rowsBg"))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                            SummaryView(
+                                title: "borrowed",
+                                amount: persons.totalBorrowed,
+                                color: "danger")
+                        }
+
+                        VStack(alignment: .center, spacing: 10) {
+                            ForEach(persons.persons, id: \.id) { person in
+                                NavigationLink(destination: PersonDetailsView(person: person)) {
+                                    RowView(person: person)
+                                        .font(.body)
+                                        .padding()
+                                        .background(Color("rowsBg"))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 10)
+                                                .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                                }
                             }
                         }
+                        .padding(.top, 10)
                     }
-                    .padding(.top, 10)
+                    .padding(10)
+                    .background(Color("sceneBg"))
                 }
-                .padding(10)
-                .background(Color("sceneBg"))
             }
             .navigationBarTitle(Text("Lend & Borrow"))
             .navigationBarItems(
