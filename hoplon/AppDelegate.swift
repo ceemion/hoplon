@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // See all fonts on app
+        //for family in UIFont.familyNames.sorted() {
+        //    let names = UIFont.fontNames(forFamilyName: family)
+        //    print("Family: \(family) Font names: \(names)")
+        //}
+
+        guard UIFont(name: "NewYorkSmall-Regular", size: UIFont.labelFontSize) != nil else {
+            fatalError("""
+        Failed to load the "NewYorkSmall-Regular" font.
+        Make sure the font file is included in the project and the font name is spelled correctly.
+        """)
+        }
+
         return true
     }
 

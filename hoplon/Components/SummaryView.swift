@@ -15,16 +15,17 @@ struct SummaryView: View {
     let color: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(self.title.uppercased())
+                .font(Font.custom(Constants.Font.title, size: 10))
+                .foregroundColor(Color.gray)
+
             HStack {
                 Spacer()
             }
 
-            Text(self.title.uppercased())
-                .font(.footnote)
-                .foregroundColor(Color.gray)
-
             Text(String(self.amount))
+                .font(Font.custom(Constants.Font.title, size: 25))
                 .foregroundColor(Color(color))
         }
         .font(.body)

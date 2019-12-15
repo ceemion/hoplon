@@ -29,6 +29,18 @@
 		36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewPersonView.swift */; };
 		36C63747239F38580045C6E5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63746239F38580045C6E5 /* Form.swift */; };
 		36C6374B23A5B83B0045C6E5 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C6374A23A5B83B0045C6E5 /* SummaryView.swift */; };
+		36C6375A23A6E1C50045C6E5 /* NewYorkSmall-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6374E23A6E1C50045C6E5 /* NewYorkSmall-BoldItalic.otf */; };
+		36C6375B23A6E1C50045C6E5 /* NewYorkSmall-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6374F23A6E1C50045C6E5 /* NewYorkSmall-Bold.otf */; };
+		36C6375C23A6E1C50045C6E5 /* NewYorkSmall-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375023A6E1C50045C6E5 /* NewYorkSmall-BlackItalic.otf */; };
+		36C6375D23A6E1C50045C6E5 /* NewYorkSmall-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375123A6E1C50045C6E5 /* NewYorkSmall-Medium.otf */; };
+		36C6375E23A6E1C50045C6E5 /* NewYorkSmall-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375223A6E1C50045C6E5 /* NewYorkSmall-HeavyItalic.otf */; };
+		36C6375F23A6E1C50045C6E5 /* NewYorkSmall-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375323A6E1C50045C6E5 /* NewYorkSmall-Black.otf */; };
+		36C6376023A6E1C50045C6E5 /* NewYorkSmall-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375423A6E1C50045C6E5 /* NewYorkSmall-SemiboldItalic.otf */; };
+		36C6376123A6E1C50045C6E5 /* NewYorkSmall-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375523A6E1C50045C6E5 /* NewYorkSmall-Semibold.otf */; };
+		36C6376223A6E1C50045C6E5 /* NewYorkSmall-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375623A6E1C50045C6E5 /* NewYorkSmall-RegularItalic.otf */; };
+		36C6376323A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375723A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf */; };
+		36C6376423A6E1C50045C6E5 /* NewYorkSmall-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375823A6E1C50045C6E5 /* NewYorkSmall-Regular.otf */; };
+		36C6376523A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375923A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +89,18 @@
 		36C63744239F2CFC0045C6E5 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 		36C63746239F38580045C6E5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		36C6374A23A5B83B0045C6E5 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		36C6374E23A6E1C50045C6E5 /* NewYorkSmall-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BoldItalic.otf"; sourceTree = "<group>"; };
+		36C6374F23A6E1C50045C6E5 /* NewYorkSmall-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Bold.otf"; sourceTree = "<group>"; };
+		36C6375023A6E1C50045C6E5 /* NewYorkSmall-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-BlackItalic.otf"; sourceTree = "<group>"; };
+		36C6375123A6E1C50045C6E5 /* NewYorkSmall-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Medium.otf"; sourceTree = "<group>"; };
+		36C6375223A6E1C50045C6E5 /* NewYorkSmall-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-HeavyItalic.otf"; sourceTree = "<group>"; };
+		36C6375323A6E1C50045C6E5 /* NewYorkSmall-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Black.otf"; sourceTree = "<group>"; };
+		36C6375423A6E1C50045C6E5 /* NewYorkSmall-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		36C6375523A6E1C50045C6E5 /* NewYorkSmall-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Semibold.otf"; sourceTree = "<group>"; };
+		36C6375623A6E1C50045C6E5 /* NewYorkSmall-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-RegularItalic.otf"; sourceTree = "<group>"; };
+		36C6375723A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Heavy.otf"; sourceTree = "<group>"; };
+		36C6375823A6E1C50045C6E5 /* NewYorkSmall-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Regular.otf"; sourceTree = "<group>"; };
+		36C6375923A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-MediumItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +157,7 @@
 				3651402B2396E85D00CABF31 /* Views */,
 				365140342399581D00CABF31 /* Services */,
 				3651403B23995D6300CABF31 /* View Models */,
+				36C6376623A6E1D60045C6E5 /* Fonts */,
 				36210585238B2D08008240B2 /* AppDelegate.swift */,
 				36210587238B2D08008240B2 /* SceneDelegate.swift */,
 				36210589238B2D08008240B2 /* ContentView.swift */,
@@ -224,6 +249,33 @@
 				36C6374A23A5B83B0045C6E5 /* SummaryView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		36C6374D23A6E1C50045C6E5 /* New-York-OTF */ = {
+			isa = PBXGroup;
+			children = (
+				36C6374E23A6E1C50045C6E5 /* NewYorkSmall-BoldItalic.otf */,
+				36C6374F23A6E1C50045C6E5 /* NewYorkSmall-Bold.otf */,
+				36C6375023A6E1C50045C6E5 /* NewYorkSmall-BlackItalic.otf */,
+				36C6375123A6E1C50045C6E5 /* NewYorkSmall-Medium.otf */,
+				36C6375223A6E1C50045C6E5 /* NewYorkSmall-HeavyItalic.otf */,
+				36C6375323A6E1C50045C6E5 /* NewYorkSmall-Black.otf */,
+				36C6375423A6E1C50045C6E5 /* NewYorkSmall-SemiboldItalic.otf */,
+				36C6375523A6E1C50045C6E5 /* NewYorkSmall-Semibold.otf */,
+				36C6375623A6E1C50045C6E5 /* NewYorkSmall-RegularItalic.otf */,
+				36C6375723A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf */,
+				36C6375823A6E1C50045C6E5 /* NewYorkSmall-Regular.otf */,
+				36C6375923A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf */,
+			);
+			path = "New-York-OTF";
+			sourceTree = "<group>";
+		};
+		36C6376623A6E1D60045C6E5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36C6374D23A6E1C50045C6E5 /* New-York-OTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,8 +383,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				36210592238B2D09008240B2 /* LaunchScreen.storyboard in Resources */,
+				36C6375B23A6E1C50045C6E5 /* NewYorkSmall-Bold.otf in Resources */,
+				36C6376223A6E1C50045C6E5 /* NewYorkSmall-RegularItalic.otf in Resources */,
+				36C6376123A6E1C50045C6E5 /* NewYorkSmall-Semibold.otf in Resources */,
+				36C6375F23A6E1C50045C6E5 /* NewYorkSmall-Black.otf in Resources */,
 				3621058F238B2D09008240B2 /* Preview Assets.xcassets in Resources */,
+				36C6376423A6E1C50045C6E5 /* NewYorkSmall-Regular.otf in Resources */,
+				36C6376023A6E1C50045C6E5 /* NewYorkSmall-SemiboldItalic.otf in Resources */,
+				36C6375E23A6E1C50045C6E5 /* NewYorkSmall-HeavyItalic.otf in Resources */,
+				36C6375A23A6E1C50045C6E5 /* NewYorkSmall-BoldItalic.otf in Resources */,
+				36C6375D23A6E1C50045C6E5 /* NewYorkSmall-Medium.otf in Resources */,
+				36C6376323A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf in Resources */,
+				36C6376523A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf in Resources */,
 				3621058C238B2D09008240B2 /* Assets.xcassets in Resources */,
+				36C6375C23A6E1C50045C6E5 /* NewYorkSmall-BlackItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
