@@ -24,7 +24,7 @@ struct SummaryView: View {
                 Spacer()
             }
 
-            Text(String(self.amount))
+            Text("\u{20A6} \(String(self.amount))")
                 .font(Font.custom(Constants.Font.title, size: 25))
                 .foregroundColor(Color(color))
         }
