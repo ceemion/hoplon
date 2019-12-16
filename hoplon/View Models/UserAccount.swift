@@ -12,7 +12,10 @@ final class UserAccount: ObservableObject {
 
     @Published var authenticated: Bool = false
 
+    @Published var loginEmail: String = ""
+    @Published var loginPass: String = ""
+
     init() {
-        self.authenticated = true
+//        self.authenticated = true
     }
 }

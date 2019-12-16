@@ -9,8 +9,34 @@
 import SwiftUI
 
 struct LoginView: View {
+
+    @EnvironmentObject var userAccount: UserAccount
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 10) {
+            Group {
+                Text("Welcome back.")
+                Text("Great to see you again")
+            }
+
+            VStack(alignment: .leading, spacing: 5) {
+                Label(text: "Email")
+                TextField("", text: $userAccount.loginEmail)
+                    .textFieldStyle(HoplonTextFieldStyle())
+            }
+
+            VStack(alignment: .leading, spacing: 5) {
+                Label(text: "Password")
+                TextField("", text: $userAccount.loginPass)
+                    .textFieldStyle(HoplonTextFieldStyle())
+            }
+
+            Button(action: { print("login btn tapped") }) {
+                Text("Log in")
+            }
+            Spacer()
+        }
+        .padding()
     }
 }
 

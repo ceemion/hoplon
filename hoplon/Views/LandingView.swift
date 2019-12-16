@@ -13,14 +13,26 @@ struct LandingView: View {
     @EnvironmentObject var userAccount: UserAccount
 
     var body: some View {
-        VStack {
-            Text("Hello World!")
-            Button(action: { self.userAccount.authenticated.toggle() }) {
-                Image(systemName: "person")
-                    .padding()
+        NavigationView {
+            VStack {
+                Text("Hoplon")
+                Text("Track Lends and Borrows")
+
+                NavigationLink(destination: CreateAccountView()) {
+                        Text("Get Started")
+                }
+
+                NavigationLink(destination: LoginView()) {
+                        Text("Log in")
+                }
+
+                Button(action: { self.userAccount.authenticated.toggle() }) {
+                    Image(systemName: "person")
+                        .padding()
+                }
             }
         }
-        
+        .accentColor(Color("primary"))
     }
 }
 
