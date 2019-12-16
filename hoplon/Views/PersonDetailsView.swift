@@ -27,19 +27,19 @@ struct PersonDetailsView: View {
                     Image(systemName: "text.bubble")
                         .imageScale(.small)
                         .accessibility(label: Text("Text Message"))
-                }.foregroundColor(Color.gray)
+                }.foregroundColor(Color("gray"))
                 Spacer()
                 Button(action: { print("contact btn tapped") }) {
                     Image(systemName: "paperplane")
                         .imageScale(.small)
                         .accessibility(label: Text("Email"))
-                }.foregroundColor(Color.gray)
+                }.foregroundColor(Color("gray"))
                 Spacer()
                 Button(action: { print("contact btn tapped") }) {
                     Image(systemName: "bubble.left.and.bubble.right")
                         .imageScale(.small)
                         .accessibility(label: Text("Whatsapp"))
-                }.foregroundColor(Color.gray)
+                }.foregroundColor(Color("gray"))
             }
             .padding(.top, 10)
             .padding(.bottom, 5)
@@ -72,8 +72,10 @@ struct PersonDetailsView: View {
                             .padding()
                         } else {
                             ForEach(person.data) { lb in
-                                LBRowView(lb: lb)
-                                    .font(.body)
+                                LBRowView(
+                                    lb: lb,
+                                    type: lb.lb_type == "lent" ? "success" : "danger"
+                                )
                             }
                         }
                     }
@@ -107,25 +109,35 @@ struct NewEntryButton: View {
 
 struct LBRowView: View {
     var lb: LendBorrow
+    var type: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
+        VStack(alignment: .leading, spacing: 15) {
             HStack {
-                Text(String(lb.amount))
+                Text("\u{20A6} \(String(lb.amount))")
+                    .foregroundColor(Color(type))
+                    .font(Font.custom(Constants.Font.title, size: CGFloat(Constants.TextSizes.title)))
                 Spacer()
                 Button(action: { print("info btn tapped") }) {
                     Image(systemName: "info.circle")
-                        .imageScale(.large)
+                        .imageScale(.small)
                         .accessibility(label: Text("Info"))
                 }
             }
 
-            Text("Date Due: \(lb.date_due.isEmpty ? "Not Stated" : lb.date_due)")
-            Text(lb.notes)
+            Group {
+                Text("Date Due: \(lb.date_due.isEmpty ? "Not Stated" : lb.date_due)")
+                Text(lb.notes)
+            }
+            .foregroundColor(Color("text"))
+            .font(Font.custom(Constants.Font.main, size: CGFloat(Constants.TextSizes.body)))
+
             Text(lb.updated_at)
+                .foregroundColor(Color("text").opacity(0.5))
+                .font(Font.custom(Constants.Font.mainItalic, size: CGFloat(Constants.TextSizes.body)))
         }
         .padding()
-        .background(lb.lb_type == "lent" ? Color("success").opacity(0.1) : Color("danger").opacity(0.1))
+        .background(Color(type).opacity(0.1))
         .cornerRadius(10)
     }
 }
