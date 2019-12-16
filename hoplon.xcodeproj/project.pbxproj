@@ -25,6 +25,9 @@
 		3651403F2399D23600CABF31 /* LendAndBorrowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */; };
 		36514041239A4E6300CABF31 /* NewLendBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514040239A4E6300CABF31 /* NewLendBorrow.swift */; };
 		36514045239A934200CABF31 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36514044239A934200CABF31 /* PersonDetailsView.swift */; };
+		36727C2E23A7C5E800E89102 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C2D23A7C5E800E89102 /* LandingView.swift */; };
+		36727C3223A7C64800E89102 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C3123A7C64800E89102 /* CreateAccountView.swift */; };
+		36727C3423A7C66000E89102 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C3323A7C66000E89102 /* LoginView.swift */; };
 		36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63742239F25D80045C6E5 /* LendAndBorrow.swift */; };
 		36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewPersonView.swift */; };
 		36C63747239F38580045C6E5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63746239F38580045C6E5 /* Form.swift */; };
@@ -85,6 +88,9 @@
 		3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrowViewModel.swift; sourceTree = "<group>"; };
 		36514040239A4E6300CABF31 /* NewLendBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLendBorrow.swift; sourceTree = "<group>"; };
 		36514044239A934200CABF31 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		36727C2D23A7C5E800E89102 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		36727C3123A7C64800E89102 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		36727C3323A7C66000E89102 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		36C63742239F25D80045C6E5 /* LendAndBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrow.swift; sourceTree = "<group>"; };
 		36C63744239F2CFC0045C6E5 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 		36C63746239F38580045C6E5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
@@ -198,11 +204,13 @@
 		3651402B2396E85D00CABF31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36727C3523A7C66F00E89102 /* Authentication */,
 				362105B5238B354E008240B2 /* PersonsView.swift */,
 				36514044239A934200CABF31 /* PersonDetailsView.swift */,
 				36C63744239F2CFC0045C6E5 /* NewPersonView.swift */,
 				36514040239A4E6300CABF31 /* NewLendBorrow.swift */,
 				362105B7238B3646008240B2 /* ProfileView.swift */,
+				36727C2D23A7C5E800E89102 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +249,15 @@
 				3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		36727C3523A7C66F00E89102 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				36727C3123A7C64800E89102 /* CreateAccountView.swift */,
+				36727C3323A7C66000E89102 /* LoginView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		36C6374C23A5B8480045C6E5 /* Components */ = {
@@ -421,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36727C2E23A7C5E800E89102 /* LandingView.swift in Sources */,
 				36514045239A934200CABF31 /* PersonDetailsView.swift in Sources */,
 				3651402D239732D200CABF31 /* Person.swift in Sources */,
 				36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */,
@@ -433,10 +451,12 @@
 				36C63747239F38580045C6E5 /* Form.swift in Sources */,
 				365140332399581000CABF31 /* HttpService.swift in Sources */,
 				362105B6238B354E008240B2 /* PersonsView.swift in Sources */,
+				36727C3223A7C64800E89102 /* CreateAccountView.swift in Sources */,
 				36514041239A4E6300CABF31 /* NewLendBorrow.swift in Sources */,
 				36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */,
 				3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,
+				36727C3423A7C66000E89102 /* LoginView.swift in Sources */,
 				36C6374B23A5B83B0045C6E5 /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
