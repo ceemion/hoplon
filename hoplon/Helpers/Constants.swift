@@ -14,9 +14,11 @@ struct Constants {
         static let title = "NewYorkSmall-Regular"
         static let nav = "NewYorkSmall-Semibold"
         static let main = "Helvetica"
+        static let mainItalic = "Helvetica-Oblique"
     }
 
     struct TextSizes {
+        static let title = 18.0
         static let body = 16.0
     }
 

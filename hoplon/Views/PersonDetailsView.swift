@@ -126,13 +126,13 @@ struct LBRowView: View {
             }
 
             Group {
-                Text("Date Due: \(lb.date_due.isEmpty ? "Not Stated" : lb.date_due)")
+                Text("Date Due: \(lb.date_due.isEmpty ? "Not Stated" : formatDate(lb.date_due))")
                 Text(lb.notes)
             }
             .foregroundColor(Color("text"))
             .font(Font.custom(Constants.Font.main, size: CGFloat(Constants.TextSizes.body)))
 
-            Text(lb.updated_at)
+            Text(formatDateTime(lb.updated_at))
                 .foregroundColor(Color("text").opacity(0.5))
                 .font(Font.custom(Constants.Font.mainItalic, size: CGFloat(Constants.TextSizes.body)))
         }
@@ -150,6 +150,35 @@ private func phoneCallAction(_ n: String) {
     }
 }
 
+
+// MARK: - DATE HELPERS: format dates
+private func formatDateTime(_ date: String) -> String {
+    let formatter = DateFormatter()
+
+    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    formatter.locale = Locale(identifier: "en_US_POSIX") // https://developer.apple.com/library/archive/qa/qa1480/_index.html
+    let dateObject = formatter.date(from: date)
+
+    // set format to parse month in words
+    formatter.dateFormat = "d MMMM yyyy, HH:mm"
+
+    return formatter.string(from: dateObject!)
+}
+
+private func formatDate(_ date: String) -> String {
+    let formatter = DateFormatter()
+
+    formatter.dateFormat = "yyyy-MM-dd"
+    formatter.locale = Locale(identifier: "en_US_POSIX") // https://developer.apple.com/library/archive/qa/qa1480/_index.html
+    let dateObject = formatter.date(from: date)
+
+    // set format to parse month in words
+    formatter.dateFormat = "d MMMM yyyy"
+
+    return formatter.string(from: dateObject!)
+}
+
+// MARK: - Preview
 struct PersonDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         PersonDetailsView(
