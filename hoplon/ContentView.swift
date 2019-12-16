@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
 
+    @EnvironmentObject var userAccount: UserAccount
+
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             .font: UIFont(name: Constants.Font.nav, size: 34)!]
@@ -19,27 +21,33 @@ struct ContentView: View {
     }
  
     var body: some View {
-        TabView(selection: $selection) {
-            PersonsView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person.3")
-                        Text("Persons")
-                    }
+        Group {
+            if userAccount.authenticated {
+                TabView(selection: $selection) {
+                    PersonsView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "person.3")
+                                Text("Persons")
+                            }
+                        }
+                        .tag(0)
+                    ProfileView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "gear")
+                                Text("Profile")
+                            }
+                        }
+                        .tag(1)
                 }
-                .tag(0)
-            ProfileView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "gear")
-                        Text("Profile")
-                    }
-                }
-                .tag(1)
+                .accentColor(Color("primary"))
+            } else {
+                LandingView()
+            }
         }
-        .accentColor(Color("primary"))
     }
 }
 

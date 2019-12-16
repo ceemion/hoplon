@@ -9,10 +9,19 @@
 import SwiftUI
 
 struct ProfileView: View {
+
+    @EnvironmentObject var userAccount: UserAccount
+
     var body: some View {
         NavigationView {
-            Text("Hello Profile View!")
-                .navigationBarTitle("Profile")
+            VStack {
+                Text("Hello Profile View!")
+                Button(action: { self.userAccount.authenticated.toggle() }) {
+                    Image(systemName: "power")
+                        .padding()
+                }
+            }
+            .navigationBarTitle("Profile")
         }
     }
 }

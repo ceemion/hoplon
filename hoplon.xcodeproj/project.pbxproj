@@ -28,6 +28,7 @@
 		36727C2E23A7C5E800E89102 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C2D23A7C5E800E89102 /* LandingView.swift */; };
 		36727C3223A7C64800E89102 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C3123A7C64800E89102 /* CreateAccountView.swift */; };
 		36727C3423A7C66000E89102 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C3323A7C66000E89102 /* LoginView.swift */; };
+		36727C3723A7C7D200E89102 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36727C3623A7C7D200E89102 /* UserAccount.swift */; };
 		36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63742239F25D80045C6E5 /* LendAndBorrow.swift */; };
 		36C63745239F2CFC0045C6E5 /* NewPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63744239F2CFC0045C6E5 /* NewPersonView.swift */; };
 		36C63747239F38580045C6E5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C63746239F38580045C6E5 /* Form.swift */; };
@@ -91,6 +92,7 @@
 		36727C2D23A7C5E800E89102 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		36727C3123A7C64800E89102 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		36727C3323A7C66000E89102 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		36727C3623A7C7D200E89102 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		36C63742239F25D80045C6E5 /* LendAndBorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendAndBorrow.swift; sourceTree = "<group>"; };
 		36C63744239F2CFC0045C6E5 /* NewPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonView.swift; sourceTree = "<group>"; };
 		36C63746239F38580045C6E5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			children = (
 				3651403923995D5800CABF31 /* PersonsViewModel.swift */,
 				3651403E2399D23600CABF31 /* LendAndBorrowViewModel.swift */,
+				36727C3623A7C7D200E89102 /* UserAccount.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,
 				36727C3423A7C66000E89102 /* LoginView.swift in Sources */,
 				36C6374B23A5B83B0045C6E5 /* SummaryView.swift in Sources */,
+				36727C3723A7C7D200E89102 /* UserAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

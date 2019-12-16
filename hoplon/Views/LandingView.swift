@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct LandingView: View {
+
+    @EnvironmentObject var userAccount: UserAccount
+
     var body: some View {
-        Text("Hello World!")
+        VStack {
+            Text("Hello World!")
+            Button(action: { self.userAccount.authenticated.toggle() }) {
+                Image(systemName: "person")
+                    .padding()
+            }
+        }
+        
     }
 }
 
