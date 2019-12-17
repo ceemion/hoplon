@@ -1,0 +1,6 @@
+framework module Pods_hoplonTests {
+  umbrella header "Pods-hoplonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
