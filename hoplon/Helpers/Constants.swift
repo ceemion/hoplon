@@ -24,6 +24,7 @@ struct Constants {
 
     struct Http {
         static let isLive = false
-        static let BASE_URL = isLive ? "https://my-forecast-api.herokuapp.com/api/v1" : "http://localhost:5001/api/v1"
+        static let BASE_URL = isLive ? "https://my-forecast-api.herokuapp.com/api" : "http://localhost:5001/api"
+        static let BASE_URL_V1 = "\(BASE_URL)/v1"
     }
 }

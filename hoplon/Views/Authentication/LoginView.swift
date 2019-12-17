@@ -23,15 +23,17 @@ struct LoginView: View {
                 Label(text: "Email")
                 TextField("", text: $userAccount.loginEmail)
                     .textFieldStyle(HoplonTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
             }
 
             VStack(alignment: .leading, spacing: 5) {
                 Label(text: "Password")
-                TextField("", text: $userAccount.loginPass)
+                SecureField("", text: $userAccount.loginPass)
                     .textFieldStyle(HoplonTextFieldStyle())
             }
 
-            Button(action: { print("login btn tapped") }) {
+            Button(action: { self.userAccount.login() }) {
                 Text("Log in")
             }
             Spacer()

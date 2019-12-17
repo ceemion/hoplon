@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct User: Identifiable, Codable {
+    let id: Int
+    let email: String
+    let first_name: String
+    let last_name: String
+    let phone_number: String
+}
