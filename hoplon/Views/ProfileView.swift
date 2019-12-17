@@ -16,7 +16,7 @@ struct ProfileView: View {
         NavigationView {
             VStack {
                 Text("Hello Profile View!")
-                Button(action: { self.userAccount.authenticated.toggle() }) {
+                Button(action: { self.userAccount.logout() }) {
                     Image(systemName: "power")
                         .padding()
                 }
