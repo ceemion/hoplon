@@ -16,6 +16,7 @@ final class UserAccount: ObservableObject {
 
     @Published var loginEmail: String = "f-001@f.com"
     @Published var loginPass: String = "password"
+    @Published var loading: Bool = false
 
     init() {
         let retrievedJWT: String = KeychainWrapper.standard.string(forKey: "userJWToken") ?? ""
@@ -25,11 +26,14 @@ final class UserAccount: ObservableObject {
     }
 
     func login() {
+        self.loading = true
+
         HttpService().loginUser(self.loginEmail, self.loginPass) { (user, jwt) in
             let jwt = jwt as! String
             let saveToken: Bool = KeychainWrapper.standard.set(jwt, forKey: "userJWToken")
             let saveId: Bool = KeychainWrapper.standard.set(String(user.id), forKey: "userId")
 
+            self.loading = false
             self.authenticated = saveToken && saveId ? true : false
         }
     }

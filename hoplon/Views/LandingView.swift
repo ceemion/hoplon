@@ -25,11 +25,6 @@ struct LandingView: View {
                 NavigationLink(destination: LoginView()) {
                         Text("Log in")
                 }
-
-                Button(action: { self.userAccount.authenticated.toggle() }) {
-                    Image(systemName: "person")
-                        .padding()
-                }
             }
         }
         .accentColor(Color("primary"))

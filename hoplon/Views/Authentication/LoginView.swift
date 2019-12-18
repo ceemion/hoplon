@@ -34,11 +34,15 @@ struct LoginView: View {
             }
 
             Button(action: { self.userAccount.login() }) {
-                Text("Log in")
+                if self.userAccount.loading {
+                    Text("Please wait...")
+                } else {
+                    Text("Log in")
+                }
             }
             Spacer()
         }
-        .padding()
+        .padding().background(Color.red)
     }
 }
 
