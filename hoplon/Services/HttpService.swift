@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftKeychainWrapper
 
 class HttpService {
 
@@ -17,6 +18,10 @@ class HttpService {
     private let aggregatorsUrl:String = "\(Constants.Http.BASE_URL_V1)/aggregators"
     private let contactsUrl:String = "\(Constants.Http.BASE_URL_V1)/contacts"
     private let lendBorrowUrl:String = "\(Constants.Http.BASE_URL_V1)/lend_borrows"
+
+    func retrieveJWT() -> String {
+        return KeychainWrapper.standard.string(forKey: "userJWToken") ?? ""
+    }
 
     func auth(_ type: String, _ p: Dictionary<String, String>, _ completion: @escaping (User, Error, Any) -> ()) {
         let url = type == "login" ? URL(string: loginUrl)! : URL(string: registerUrl)!
@@ -93,8 +98,11 @@ class HttpService {
     func getAggregators(_ completion: @escaping (Aggregator) -> ()) {
          let url = URL(string: aggregatorsUrl)!
 
+        var request = URLRequest(url: url)
+        request.setValue(retrieveJWT(), forHTTPHeaderField: "Authorization")
+
          let sharedSession = URLSession.shared
-         let task = sharedSession.dataTask(with: url) { data, response, error in
+         let task = sharedSession.dataTask(with: request) { data, response, error in
             if let error = error {
                 print("my Client Error")
                 print(error)
@@ -133,8 +141,11 @@ class HttpService {
     func getPersons(_ completion: @escaping ([Person]) -> ()) {
         let url = URL(string: contactsUrl)!
 
+        var request = URLRequest(url: url)
+        request.setValue(retrieveJWT(), forHTTPHeaderField: "Authorization")
+
         let sharedSession = URLSession.shared
-        let task = sharedSession.dataTask(with: url) { data, response, error in
+        let task = sharedSession.dataTask(with: request) { data, response, error in
            if let error = error {
                print("my Client Error")
                print(error)
@@ -179,6 +190,7 @@ class HttpService {
 
         request.httpMethod = "POST"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(retrieveJWT(), forHTTPHeaderField: "Authorization")
         request.httpBody = httpBody
 
         let sharedSession = URLSession.shared
@@ -229,6 +241,7 @@ class HttpService {
 
         request.httpMethod = "POST"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(retrieveJWT(), forHTTPHeaderField: "Authorization")
         request.httpBody = httpBody
 
         let sharedSession = URLSession.shared
