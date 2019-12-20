@@ -13,6 +13,7 @@ struct PersonDetailsView: View {
     var person: Person
 
     @State var openNew: Bool = false
+    @State var lbActionSheet: Bool = false
 
     var body: some View {
         VStack {
@@ -74,7 +75,8 @@ struct PersonDetailsView: View {
                             ForEach(person.data) { lb in
                                 LBRowView(
                                     lb: lb,
-                                    type: lb.lb_type == "lent" ? "success" : "danger"
+                                    type: lb.lb_type == "lent" ? "success" : "danger",
+                                    lbActionSheet: self.$lbActionSheet
                                 )
                             }
                         }
@@ -111,6 +113,20 @@ struct LBRowView: View {
     var lb: LendBorrow
     var type: String
 
+    @Binding var lbActionSheet: Bool
+
+    var actionSheet: ActionSheet {
+        ActionSheet(title: Text("Options"), buttons: [
+            .default(Text("Mark As Completed"), action: {
+                print("tap of M A Completed")
+            }),
+            .destructive(Text("Delete"), action: {
+                print("tap of lb Delete")
+            }),
+            .cancel()
+        ])
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             HStack {
@@ -118,10 +134,13 @@ struct LBRowView: View {
                     .foregroundColor(Color(type))
                     .font(Font.custom(Constants.Font.title, size: CGFloat(Constants.TextSizes.title)))
                 Spacer()
-                Button(action: { print("info btn tapped") }) {
-                    Image(systemName: "info.circle")
+                Button(action: { self.lbActionSheet.toggle() }) {
+                    Image(systemName: "ellipsis")
                         .imageScale(.small)
                         .accessibility(label: Text("Info"))
+                }
+                .actionSheet(isPresented: $lbActionSheet) { () -> ActionSheet in
+                    self.actionSheet
                 }
             }
 
