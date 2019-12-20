@@ -75,7 +75,7 @@ struct PersonDetailsView: View {
                             ForEach(person.data) { lb in
                                 LBRowView(
                                     lb: lb,
-                                    type: lb.lb_type == "lent" ? "success" : "danger",
+                                    type: lb.status == "completed" ? "gray" : (lb.lb_type == "lent" ? "success" : "danger"),
                                     lbActionSheet: self.$lbActionSheet
                                 )
                             }
@@ -139,6 +139,7 @@ struct LBRowView: View {
                         .imageScale(.small)
                         .accessibility(label: Text("Info"))
                 }
+                .accentColor(Color(type))
                 .actionSheet(isPresented: $lbActionSheet) { () -> ActionSheet in
                     self.actionSheet
                 }
@@ -154,6 +155,16 @@ struct LBRowView: View {
             Text(formatDateTime(lb.updated_at))
                 .foregroundColor(Color("text").opacity(0.5))
                 .font(Font.custom(Constants.Font.mainItalic, size: CGFloat(Constants.TextSizes.body)))
+
+            if lb.status == "completed" {
+                HStack(alignment: .center, spacing: 10) {
+                    Image(systemName: "checkmark.seal")
+                        .imageScale(.small)
+                    Text("Settled Up")
+                        .font(Font.custom(Constants.Font.main, size: 14))
+                }
+                .foregroundColor(Color("gray"))
+            }
         }
         .padding()
         .background(Color(type).opacity(0.1))
