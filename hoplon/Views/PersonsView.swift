@@ -28,6 +28,10 @@ struct PersonsView: View {
             ScrollView(.vertical, showsIndicators: true) {
                 if persons.loading {
                     VStack {
+                        HStack {
+                            Spacer()
+                        }
+
                         Text("Loading...")
                             .font(.footnote)
                             .foregroundColor(Color.gray)
