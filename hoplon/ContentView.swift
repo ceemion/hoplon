@@ -44,6 +44,8 @@ struct ContentView: View {
                         .tag(1)
                 }
                 .accentColor(Color("primary"))
+            } else if userAccount.redirectToLogin {
+                LoginView()
             } else {
                 LandingView()
             }

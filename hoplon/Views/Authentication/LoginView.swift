@@ -14,10 +14,12 @@ struct LoginView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Group {
-                Text("Welcome back.")
-                Text("Great to see you again")
-            }
+            Text("""
+                Welcome back.
+                Great to see you again
+                """)
+
+            Text(userAccount.error.error)
 
             VStack(alignment: .leading, spacing: 5) {
                 Label(text: "Email")
@@ -29,7 +31,7 @@ struct LoginView: View {
 
             VStack(alignment: .leading, spacing: 5) {
                 Label(text: "Password")
-                SecureField("", text: $userAccount.loginPass)
+                SecureField("", text: $userAccount.loginPassword)
                     .textFieldStyle(HoplonTextFieldStyle())
             }
 
@@ -42,7 +44,7 @@ struct LoginView: View {
             }
             Spacer()
         }
-        .padding().background(Color.red)
+        .padding()
     }
 }
 

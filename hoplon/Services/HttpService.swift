@@ -7,71 +7,47 @@
 //
 
 import Foundation
+import Alamofire
 
 class HttpService {
 
     private let loginUrl:String = "\(Constants.Http.BASE_URL)/auth/sign_in"
+    private let registerUrl:String = "\(Constants.Http.BASE_URL)/auth/register"
     private let logoutUrl:String = "\(Constants.Http.BASE_URL)/auth/sign_out"
     private let aggregatorsUrl:String = "\(Constants.Http.BASE_URL_V1)/aggregators"
     private let contactsUrl:String = "\(Constants.Http.BASE_URL_V1)/contacts"
     private let lendBorrowUrl:String = "\(Constants.Http.BASE_URL_V1)/lend_borrows"
 
-    func loginUser(_ email: String, _ password: String, _ completion: @escaping (User, Any) -> ()) {
-        let url = URL(string: loginUrl)!
+    func auth(_ type: String, _ p: Dictionary<String, String>, _ completion: @escaping (User, Error, Any) -> ()) {
+        let url = type == "login" ? URL(string: loginUrl)! : URL(string: registerUrl)!
 
         let payload: [String: [String: String]] = [
-            "user": [
-                "email": email,
-                "password": password
-            ]
+            "user": p
         ]
 
-        guard let httpBody = try? JSONEncoder().encode(payload) else { return }
+        AF.request(url, method: .post, parameters: payload).responseJSON { (response) in
+            let emptyUser = User(id: 0, email: "", first_name: "", last_name: "", phone_number: "")
+            guard let data = response.data else { return }
 
-        var request = URLRequest(url: url)
+            //debugPrint(response)
 
-        request.httpMethod = "POST"
-        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = httpBody
-
-        let sharedSession = URLSession.shared
-        let task = sharedSession.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("my Client Error")
-                print(error)
-
-                //DispatchQueue.main.async {
-                //    self.handleClientError(error.localizedDescription)
-                //}
-
+            if response.response!.statusCode > 400 {
+                completion(emptyUser, Error(error: "Invalid email or password."), "")
                 return
             }
 
-            guard let httpResponse = response as? HTTPURLResponse,
-                (200...299).contains(httpResponse.statusCode) else {
-                    print("my Server Response")
-                    print(response as Any)
+            do {
+                let json = try JSONDecoder().decode(User.self, from: data)
+                let jwt = response.response?.headers["Authorization"] ?? ""
 
-                    //DispatchQueue.main.async {
-                    //    self.handleServerError(response)
-                    //}
+                completion(json, Error(error: ""), jwt)
+            } catch let error {
+                print("json decoder decode auth user catch error")
+                print(error)
 
-                    return
-            }
-
-            if let json = try? JSONDecoder().decode(User.self, from: data!) {
-//                print("Login Response Data: ", httpResponse.allHeaderFields["Authorization"]!)
-                let jwt = httpResponse.allHeaderFields["Authorization"]!
-
-                DispatchQueue.main.async {
-                    completion(json, jwt)
-                }
-            } else {
-                print("Catch json serialization error.")
+                completion(emptyUser, Error(error: "An error has occurred, please try again"), "")
             }
         }
-
-        task.resume()
     }
 
     func logout(_ completion: @escaping (Int) -> ()) {

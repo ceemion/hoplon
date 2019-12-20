@@ -14,9 +14,16 @@ final class UserAccount: ObservableObject {
     @Published var authenticated: Bool = false
     @Published var jwt: String = ""
 
-    @Published var loginEmail: String = "f-001@f.com"
-    @Published var loginPass: String = "password"
+    @Published var loginEmail: String = "f-003@f.com"
+    @Published var loginPassword: String = "password$123"
+
+    @Published var newFullName: String = ""
+    @Published var newEmail: String = ""
+    @Published var newPassword: String = ""
+
+    @Published var redirectToLogin: Bool = false
     @Published var loading: Bool = false
+    @Published var error = Error(error: "")
 
     init() {
         let retrievedJWT: String = KeychainWrapper.standard.string(forKey: "userJWToken") ?? ""
@@ -28,13 +35,52 @@ final class UserAccount: ObservableObject {
     func login() {
         self.loading = true
 
-        HttpService().loginUser(self.loginEmail, self.loginPass) { (user, jwt) in
-            let jwt = jwt as! String
-            let saveToken: Bool = KeychainWrapper.standard.set(jwt, forKey: "userJWToken")
-            let saveId: Bool = KeychainWrapper.standard.set(String(user.id), forKey: "userId")
+        let payload: [String: String] = [
+            "email": self.loginEmail,
+            "password": self.loginPassword
+        ]
 
+        HttpService().auth("login", payload) { (user, error, jwt) in
             self.loading = false
-            self.authenticated = saveToken && saveId ? true : false
+            let jwt = jwt as! String
+
+            if jwt.isEmpty {
+                self.error = error
+            } else {
+                let saveToken: Bool = KeychainWrapper.standard.set(jwt, forKey: "userJWToken")
+                let saveId: Bool = KeychainWrapper.standard.set(String(user.id), forKey: "userId")
+
+                self.loginEmail = ""
+                self.loginPassword = ""
+                self.error = Error(error: "")
+
+                self.authenticated = saveToken && saveId ? true : false
+            }
+        }
+    }
+
+    func createAccount() {
+        self.loading = true
+
+        let splitName = self.newFullName.components(separatedBy: " ")
+
+        let payload: [String: String] = [
+            "first_name": splitName[0],
+            "last_name": splitName.count > 1 ? splitName[1] : "",
+            "email": self.newEmail,
+            "phone_number": "",
+            "password": self.newPassword,
+            "password_confirmation": self.newPassword
+        ]
+
+        HttpService().auth("register", payload) { (user, error, jwt) in
+            self.loading = false
+
+            if user.id > 0 && error.error.isEmpty {
+                self.redirectToLogin = true
+            } else {
+                self.error = error
+            }
         }
     }
 
@@ -45,6 +91,7 @@ final class UserAccount: ObservableObject {
                 let removedId: Bool = KeychainWrapper.standard.removeObject(forKey: "userId")
 
                 self.authenticated = removedToken && removedId ? false : true
+                self.redirectToLogin = false
             }
         }
     }
