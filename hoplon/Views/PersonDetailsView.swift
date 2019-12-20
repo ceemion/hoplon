@@ -133,6 +133,7 @@ struct LBRowView: View {
                 Text("\u{20A6} \(String(lb.amount))")
                     .foregroundColor(Color(type))
                     .font(Font.custom(Constants.Font.title, size: CGFloat(Constants.TextSizes.title)))
+                    .strikethrough(lb.status == "completed", color: Color(type))
                 Spacer()
                 Button(action: { self.lbActionSheet.toggle() }) {
                     Image(systemName: "ellipsis")
