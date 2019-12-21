@@ -14,6 +14,11 @@ final class UserAccount: ObservableObject {
     @Published var authenticated: Bool = false
     @Published var jwt: String = ""
 
+    @Published var firstName: String = ""
+    @Published var lastName: String = ""
+    @Published var email: String = ""
+    @Published var phone: String = ""
+
     @Published var loginEmail: String = "f-003@f.com"
     @Published var loginPassword: String = "password$123"
 
@@ -27,6 +32,11 @@ final class UserAccount: ObservableObject {
 
     init() {
         let retrievedJWT: String = KeychainWrapper.standard.string(forKey: "userJWToken") ?? ""
+
+        self.firstName = KeychainWrapper.standard.string(forKey: "firstName") ?? ""
+        self.lastName = KeychainWrapper.standard.string(forKey: "lastName") ?? ""
+        self.email = KeychainWrapper.standard.string(forKey: "email") ?? ""
+        self.phone = KeychainWrapper.standard.string(forKey: "phone") ?? ""
 
         self.authenticated = retrievedJWT.isEmpty ? false : true
         self.jwt = retrievedJWT
@@ -50,9 +60,19 @@ final class UserAccount: ObservableObject {
                 let saveToken: Bool = KeychainWrapper.standard.set(jwt, forKey: "userJWToken")
                 let saveId: Bool = KeychainWrapper.standard.set(String(user.id), forKey: "userId")
 
+                let _: Bool = KeychainWrapper.standard.set(user.first_name, forKey: "firstName")
+                let _: Bool = KeychainWrapper.standard.set(user.last_name, forKey: "lastName")
+                let _: Bool = KeychainWrapper.standard.set(user.email, forKey: "email")
+                let _: Bool = KeychainWrapper.standard.set(user.phone_number, forKey: "phone")
+
                 self.loginEmail = ""
                 self.loginPassword = ""
                 self.error = Error(error: "")
+
+                self.firstName = user.first_name
+                self.lastName = user.last_name
+                self.email = user.email
+                self.phone = user.phone_number
 
                 self.authenticated = saveToken && saveId ? true : false
             }
@@ -89,6 +109,11 @@ final class UserAccount: ObservableObject {
             if status < 300 {
                 let removedToken: Bool = KeychainWrapper.standard.removeObject(forKey: "userJWToken")
                 let removedId: Bool = KeychainWrapper.standard.removeObject(forKey: "userId")
+
+                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "firstName")
+                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "lastName")
+                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "email")
+                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "phone")
 
                 self.authenticated = removedToken && removedId ? false : true
                 self.redirectToLogin = false
