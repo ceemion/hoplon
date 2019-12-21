@@ -29,6 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         """)
         }
 
+        guard UIFont(name: "Freshca-Regular", size: UIFont.labelFontSize) != nil else {
+            fatalError("""
+        Failed to load the "Freshca-Regular" font.
+        Make sure the font file is included in the project and the font name is spelled correctly.
+        """)
+        }
+
         return true
     }
 

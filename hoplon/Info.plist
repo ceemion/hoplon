@@ -80,6 +80,7 @@
 		<string>NewYorkSmall-MediumItalic.otf</string>
 		<string>NewYorkSmall-Semibold.otf</string>
 		<string>NewYorkSmall-SemiboldItalic.otf</string>
+		<string>Freshca-Regular.otf</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
