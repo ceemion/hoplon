@@ -13,6 +13,7 @@ struct Constants {
     struct Font {
         static let logo = "Freshca-Regular"
         static let title = "NewYorkSmall-Regular"
+        static let titleMed = "NewYorkSmall-Medium"
         static let nav = "NewYorkSmall-Semibold"
         static let main = "Helvetica"
         static let mainItalic = "Helvetica-Oblique"

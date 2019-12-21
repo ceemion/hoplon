@@ -13,11 +13,13 @@ struct LoginView: View {
     @EnvironmentObject var userAccount: UserAccount
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 16) {
             Text("""
                 Welcome back.
                 Great to see you again
                 """)
+                .font(Font.custom(Constants.Font.titleMed, size: 25))
+                .foregroundColor(Color("text"))
 
             Text(userAccount.error.error)
 
@@ -36,11 +38,16 @@ struct LoginView: View {
             }
 
             Button(action: { self.userAccount.login() }) {
-                if self.userAccount.loading {
-                    Text("Please wait...")
-                } else {
-                    Text("Log in")
+                HStack {
+                    Spacer()
+                    Text("\(self.userAccount.loading ? "Please wait..." : "Login")")
+                    Spacer()
                 }
+                .font(Font.custom(Constants.Font.title, size: 16))
+                .foregroundColor(Color("primary"))
+                .padding()
+                .background(Color("primary").opacity(0.2))
+                .cornerRadius(10)
             }
             Spacer()
         }
