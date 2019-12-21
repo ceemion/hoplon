@@ -14,17 +14,19 @@ struct Label: View {
 
     var body: some View {
         Text(text.uppercased())
-            .font(.footnote)
+            .font(Font.custom(Constants.Font.main, size: 10))
+            .foregroundColor(Color("gray"))
+            .tracking(0.5)
     }
 }
 
 public struct HoplonTextFieldStyle : TextFieldStyle {
     public func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
-            .font(.body)
-            .padding(10)
-            .background(
-                RoundedRectangle(cornerRadius: 5)
-                    .strokeBorder(Color.primary.opacity(0.1), lineWidth: 1))
+            .font(Font.custom(Constants.Font.main, size: 14))
+            .foregroundColor(Color("text"))
+            .padding()
+            .background(Color("inputBg"))
+            .cornerRadius(10)
     }
 }
