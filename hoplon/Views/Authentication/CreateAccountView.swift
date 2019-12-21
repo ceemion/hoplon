@@ -13,11 +13,17 @@ struct CreateAccountView: View {
     @EnvironmentObject var userAccount: UserAccount
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 16) {
             Text("""
                 Let's create
                 your account
                 """)
+                .font(Font.custom(Constants.Font.titleMed, size: 25))
+                .foregroundColor(Color("text"))
+
+            Text(userAccount.error.error)
+                .font(.footnote)
+                .foregroundColor(Color("danger"))
 
             VStack(alignment: .leading, spacing: 5) {
                 Label(text: "Full Name")
@@ -41,11 +47,17 @@ struct CreateAccountView: View {
             }
 
             Button(action: { self.userAccount.createAccount() }) {
-                if self.userAccount.loading {
-                    Text("Please wait...")
-                } else {
-                    Text("Create Account")
+                HStack {
+                    Spacer()
+                    Text("\(self.userAccount.loading ? "Please wait..." : "Create Account")")
+                        .tracking(1.0)
+                    Spacer()
                 }
+                .font(Font.custom(Constants.Font.title, size: 16))
+                .foregroundColor(Color("primary"))
+                .padding()
+                .background(Color("primary").opacity(0.2))
+                .cornerRadius(10)
             }
             Spacer()
         }

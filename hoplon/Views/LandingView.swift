@@ -36,6 +36,7 @@ struct LandingView: View {
                     HStack {
                         Spacer()
                         Text("Get Started")
+                            .tracking(1.0)
                         Spacer()
                     }
                     .font(Font.custom(Constants.Font.title, size: 16))
@@ -49,6 +50,7 @@ struct LandingView: View {
                     HStack {
                         Spacer()
                         Text("Log in")
+                            .tracking(1.0)
                         Spacer()
                     }
                     .foregroundColor(Color("gray"))

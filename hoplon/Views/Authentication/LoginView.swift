@@ -43,6 +43,7 @@ struct LoginView: View {
                 HStack {
                     Spacer()
                     Text("\(self.userAccount.loading ? "Please wait..." : "Login")")
+                        .tracking(1.0)
                     Spacer()
                 }
                 .font(Font.custom(Constants.Font.title, size: 16))
