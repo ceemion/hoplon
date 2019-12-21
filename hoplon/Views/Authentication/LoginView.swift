@@ -22,6 +22,8 @@ struct LoginView: View {
                 .foregroundColor(Color("text"))
 
             Text(userAccount.error.error)
+                .font(.footnote)
+                .foregroundColor(Color("danger"))
 
             VStack(alignment: .leading, spacing: 5) {
                 Label(text: "Email")
