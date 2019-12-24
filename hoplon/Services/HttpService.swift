@@ -160,7 +160,13 @@ class HttpService {
            guard let httpResponse = response as? HTTPURLResponse,
                (200...299).contains(httpResponse.statusCode) else {
                    print("my Server Response")
-                   print(response as Any)
+
+                do {
+                    let jsonResult:NSDictionary! = try JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                    print("server res: ", (jsonResult as AnyObject)["error"]!! as! String)
+                } catch {
+                    print("catch nsdic do")
+                }
 
                    //DispatchQueue.main.async {
                        //self.handleServerError(response)
