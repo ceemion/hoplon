@@ -20,6 +20,37 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NewYorkSmall-Regular.otf</string>
+		<string>NewYorkSmall-RegularItalic.otf</string>
+		<string>NewYorkSmall-Black.otf</string>
+		<string>NewYorkSmall-BlackItalic.otf</string>
+		<string>NewYorkSmall-Bold.otf</string>
+		<string>NewYorkSmall-BoldItalic.otf</string>
+		<string>NewYorkSmall-Heavy.otf</string>
+		<string>NewYorkSmall-HeavyItalic.otf</string>
+		<string>NewYorkSmall-Medium.otf</string>
+		<string>NewYorkSmall-MediumItalic.otf</string>
+		<string>NewYorkSmall-Semibold.otf</string>
+		<string>NewYorkSmall-SemiboldItalic.otf</string>
+		<string>Freshca-Regular.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -66,36 +97,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>NewYorkSmall-Regular.otf</string>
-		<string>NewYorkSmall-RegularItalic.otf</string>
-		<string>NewYorkSmall-Black.otf</string>
-		<string>NewYorkSmall-BlackItalic.otf</string>
-		<string>NewYorkSmall-Bold.otf</string>
-		<string>NewYorkSmall-BoldItalic.otf</string>
-		<string>NewYorkSmall-Heavy.otf</string>
-		<string>NewYorkSmall-HeavyItalic.otf</string>
-		<string>NewYorkSmall-Medium.otf</string>
-		<string>NewYorkSmall-MediumItalic.otf</string>
-		<string>NewYorkSmall-Semibold.otf</string>
-		<string>NewYorkSmall-SemiboldItalic.otf</string>
-		<string>Freshca-Regular.otf</string>
-	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
 </dict>
 </plist>

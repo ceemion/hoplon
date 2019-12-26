@@ -72,7 +72,7 @@
 
 /* Begin PBXFileReference section */
 		11475749A7F2E4F144901BE6 /* Pods-hoplonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoplonUITests.debug.xcconfig"; path = "Target Support Files/Pods-hoplonUITests/Pods-hoplonUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		36210582238B2D08008240B2 /* Hoplon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoplon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36210582238B2D08008240B2 /* Pista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36210585238B2D08008240B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36210587238B2D08008240B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36210589238B2D08008240B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,10 +80,10 @@
 		3621058E238B2D09008240B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36210591238B2D09008240B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36210593238B2D09008240B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36210598238B2D09008240B2 /* hoplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoplonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36210598238B2D09008240B2 /* pistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3621059C238B2D09008240B2 /* hoplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoplonTests.swift; sourceTree = "<group>"; };
 		3621059E238B2D09008240B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		362105A3238B2D09008240B2 /* hoplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoplonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362105A3238B2D09008240B2 /* pistaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pistaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		362105A7238B2D09008240B2 /* hoplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hoplonUITests.swift; sourceTree = "<group>"; };
 		362105A9238B2D09008240B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		362105B5238B354E008240B2 /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
@@ -185,9 +185,9 @@
 		36210583238B2D08008240B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36210582238B2D08008240B2 /* Hoplon.app */,
-				36210598238B2D09008240B2 /* hoplonTests.xctest */,
-				362105A3238B2D09008240B2 /* hoplonUITests.xctest */,
+				36210582238B2D08008240B2 /* Pista.app */,
+				36210598238B2D09008240B2 /* pistaTests.xctest */,
+				362105A3238B2D09008240B2 /* pistaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,9 +350,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		36210581238B2D08008240B2 /* hoplon */ = {
+		36210581238B2D08008240B2 /* pista */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362105AC238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplon" */;
+			buildConfigurationList = 362105AC238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pista" */;
 			buildPhases = (
 				0727A3757CE3BA2BF8464438 /* [CP] Check Pods Manifest.lock */,
 				3621057E238B2D08008240B2 /* Sources */,
@@ -364,14 +364,14 @@
 			);
 			dependencies = (
 			);
-			name = hoplon;
+			name = pista;
 			productName = hoplon;
-			productReference = 36210582238B2D08008240B2 /* Hoplon.app */;
+			productReference = 36210582238B2D08008240B2 /* Pista.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36210597238B2D09008240B2 /* hoplonTests */ = {
+		36210597238B2D09008240B2 /* pistaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362105AF238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplonTests" */;
+			buildConfigurationList = 362105AF238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pistaTests" */;
 			buildPhases = (
 				806564F79F9A5D048C90A93B /* [CP] Check Pods Manifest.lock */,
 				36210594238B2D09008240B2 /* Sources */,
@@ -383,14 +383,14 @@
 			dependencies = (
 				3621059A238B2D09008240B2 /* PBXTargetDependency */,
 			);
-			name = hoplonTests;
+			name = pistaTests;
 			productName = hoplonTests;
-			productReference = 36210598238B2D09008240B2 /* hoplonTests.xctest */;
+			productReference = 36210598238B2D09008240B2 /* pistaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		362105A2238B2D09008240B2 /* hoplonUITests */ = {
+		362105A2238B2D09008240B2 /* pistaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362105B2238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplonUITests" */;
+			buildConfigurationList = 362105B2238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pistaUITests" */;
 			buildPhases = (
 				FDA2952CBF8BC1CE4E81797C /* [CP] Check Pods Manifest.lock */,
 				3621059F238B2D09008240B2 /* Sources */,
@@ -402,9 +402,9 @@
 			dependencies = (
 				362105A5238B2D09008240B2 /* PBXTargetDependency */,
 			);
-			name = hoplonUITests;
+			name = pistaUITests;
 			productName = hoplonUITests;
-			productReference = 362105A3238B2D09008240B2 /* hoplonUITests.xctest */;
+			productReference = 362105A3238B2D09008240B2 /* pistaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -430,7 +430,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3621057D238B2D08008240B2 /* Build configuration list for PBXProject "hoplon" */;
+			buildConfigurationList = 3621057D238B2D08008240B2 /* Build configuration list for PBXProject "pista" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -443,9 +443,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				36210581238B2D08008240B2 /* hoplon */,
-				36210597238B2D09008240B2 /* hoplonTests */,
-				362105A2238B2D09008240B2 /* hoplonUITests */,
+				36210581238B2D08008240B2 /* pista */,
+				36210597238B2D09008240B2 /* pistaTests */,
+				362105A2238B2D09008240B2 /* pistaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -628,12 +628,12 @@
 /* Begin PBXTargetDependency section */
 		3621059A238B2D09008240B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36210581238B2D08008240B2 /* hoplon */;
+			target = 36210581238B2D08008240B2 /* pista */;
 			targetProxy = 36210599238B2D09008240B2 /* PBXContainerItemProxy */;
 		};
 		362105A5238B2D09008240B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 36210581238B2D08008240B2 /* hoplon */;
+			target = 36210581238B2D08008240B2 /* pista */;
 			targetProxy = 362105A4238B2D09008240B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -779,8 +779,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kompilab.hoplon;
-				PRODUCT_NAME = Hoplon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kompilab.pista;
+				PRODUCT_NAME = Pista;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -801,8 +801,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kompilab.hoplon;
-				PRODUCT_NAME = Hoplon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kompilab.pista;
+				PRODUCT_NAME = Pista;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -827,7 +827,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoplon.app/hoplon";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pista.app/pista";
 			};
 			name = Debug;
 		};
@@ -850,7 +850,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hoplon.app/hoplon";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pista.app/pista";
 			};
 			name = Release;
 		};
@@ -899,7 +899,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3621057D238B2D08008240B2 /* Build configuration list for PBXProject "hoplon" */ = {
+		3621057D238B2D08008240B2 /* Build configuration list for PBXProject "pista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362105AA238B2D09008240B2 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362105AC238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplon" */ = {
+		362105AC238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362105AD238B2D09008240B2 /* Debug */,
@@ -917,7 +917,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362105AF238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplonTests" */ = {
+		362105AF238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pistaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362105B0238B2D09008240B2 /* Debug */,
@@ -926,7 +926,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362105B2238B2D09008240B2 /* Build configuration list for PBXNativeTarget "hoplonUITests" */ = {
+		362105B2238B2D09008240B2 /* Build configuration list for PBXNativeTarget "pistaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362105B3238B2D09008240B2 /* Debug */,
