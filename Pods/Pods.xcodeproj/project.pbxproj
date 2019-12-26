@@ -13,81 +13,81 @@
 		0A1E9D786CA1040C50244F3427482C2C /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C855296B1738611458B789061B51568 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AE06C3AEA6CA45342BA703230ABD2CB /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B06F84C4C15CDF4A7592C60F0CC56C /* CachedResponseHandler.swift */; };
 		0CC43FF0E31AA320ACFEB0FE6239DF34 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7CCA27A1A931073A519A6DDAC8BAA /* ServerTrustEvaluation.swift */; };
+		10CC06D542D4E70AE3AB24B01CE834F1 /* Pods-pistaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C6B80FFD257EC87FA7EEC9771BD37F /* Pods-pistaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13457FE4E607509A3B9527B0711033D5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A98F663162D2CDEA72CD117005D06 /* ResponseSerialization.swift */; };
 		14AB7976E100075ADEA0AB1DB833E72D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B13A16D9064408AABB97F8C39E04AA /* ParameterEncoding.swift */; };
 		17953A9CF2E354B3E69B9ABC2F367AD9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A8CBF9A95CF076DA80ACB22C64C08 /* AFError.swift */; };
 		1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF2DC330A493F4171F6F777AF5CECBF /* SwiftKeychainWrapper-dummy.m */; };
-		323FDF4F834C74F0B8FACFE56024874E /* Pods-hoplon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F3251DF411B0C12A99978C90715865 /* Pods-hoplon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35C7EB60E66E2814886504B822190484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DC9100DBC45E72380903C16A58532 /* KeychainWrapper.swift */; };
+		3D6D21B0253149DC72AEB42C51437A72 /* Pods-pistaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4175769DFE9A6DE9C32CAED2A7D97C /* Pods-pistaUITests-dummy.m */; };
+		3FE910203EFCD5B0CF00D54FE48065D7 /* Pods-pista-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E59F81E2EB655DC88E5E14E5C3A0465D /* Pods-pista-dummy.m */; };
 		4082513A35C682F2193D002C80F72B79 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C70595954CB58E8F114E7FF34A9AD92 /* Result+Alamofire.swift */; };
 		42CDB5C986C78BBC8E5C0185F746CABF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4A47AE96AA187059D9BDC81D5A9D29 /* SessionDelegate.swift */; };
 		44127C4B989C9CC6A90D78B66A929A5E /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853422E2A4CBA5FCB572F103F3641C0 /* AlamofireExtended.swift */; };
 		48D97BE7D5CAED273BD2341C239CC934 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E920234EB2B976A82D9C8AAB52C37 /* RequestTaskMap.swift */; };
 		56EC8ED1535DAB987F3D2B71D4C05773 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E84040366974BC3A7496A463DD6AD11 /* HTTPHeaders.swift */; };
+		56ECB731E8041B31D597635F628947E4 /* Pods-pista-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F216D7410A25699E09F15D00F55EC82E /* Pods-pista-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C4A0685B5A201436AB52EF25829B333 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BF782E519896244E0180B05F60E8D6 /* MultipartFormData.swift */; };
 		5D12235D061AEE7459279AAF8C348DFE /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0494A4B3E8DC30B8AF0D30ED4171E24 /* URLEncodedFormEncoder.swift */; };
 		5D61C8ED0DDCC9F8B576B6514B19EE50 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1552A03D3FB633D47E555FA81AA9073 /* ParameterEncoder.swift */; };
 		69ACE4EEE5A8C1C618B22CC1F7B8EF01 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015FD63E44188AD3B651603524190DA3 /* Session.swift */; };
 		6A22C46CB1EDE471794D9AB2AC10327F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F88C328F7D774CE13014D031E29F10B /* Request.swift */; };
-		6B2C4D235DACA4303990742BCFFB63A1 /* Pods-hoplon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F14160205AA10927C47B625D597566 /* Pods-hoplon-dummy.m */; };
 		70517C3BAC2D6614347DEAC15299EB84 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E60A98B8EB9734881B38FC6FB70916D /* URLConvertible+URLRequestConvertible.swift */; };
-		74A70A802CDFC857DBDB972D9C32F199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		7704E035B15939B7041F8C40537C3C47 /* Pods-hoplonUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1C057D4E032B49E44695A5ABB45751 /* Pods-hoplonUITests-dummy.m */; };
 		7BDEA58982AE38EC64F549D981FD45E6 /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B20C1B8F80A205F2212FC191325424F4 /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CF8362BA31492053F5CB165637AE117 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C9CDC03D3FAAB3B4F2EC276AFCF8D /* NetworkReachabilityManager.swift */; };
-		82FD1B17EB0D6A11664D9113A6A44597 /* Pods-hoplonTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66FD2B632C086389F6E8DAAC6B4CDFF6 /* Pods-hoplonTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B5AED635AD7110DB8DB04602B1C13 /* KeychainItemAccessibility.swift */; };
-		870216AF8ED57D45C615F40334107862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		8D6C477678E7077D135AD8DB656F1BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		92811AC5CD9A5004116AE43C4E8FD955 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8B68A77D917205B355D17E21CD7A4 /* OperationQueue+Alamofire.swift */; };
 		97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
 		AD9899986955B2EC1EC20818C860C971 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439086C1199DD46D5FD66DD64096C36 /* RequestInterceptor.swift */; };
 		AF92602937CA016548022C600B8CDC16 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC518F04A214810144025D48C3CC91 /* URLSessionConfiguration+Alamofire.swift */; };
 		B1C58F6CED7B3E45170711D9ADF878AF /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CCCEE101D458B16C3AF7EC7AC86B16 /* Alamofire-dummy.m */; };
 		B23E9A5CDA31534491226F4C2EE8F8E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF76B5449FB6B6DE17EAF4F2BCBFC4C /* HTTPMethod.swift */; };
-		B597DE52C374FF4E65ACBA634D479CF1 /* Pods-hoplonUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3DDA26DD516F6A7C84917389357EFF /* Pods-hoplonUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5338023FB2D84FFE4A3B77405430F4F /* Pods-pistaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0DA414784DB94893BA6A1E84263B97 /* Pods-pistaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B788B3354CCEBE56DFDB963CAFD7F6C2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFC3645BCF5906CC432D07208EDE70 /* Alamofire.swift */; };
 		BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		C64AF152F7928CDB59385528DB65FE19 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E40078092AFEB7628866243CC2F9CA /* RedirectHandler.swift */; };
 		C7369563F6946D8984124E1A546B6425 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D823E352BA35CAC0A4A456C23869460 /* Notifications.swift */; };
 		CACBD166E573774FB5613C34AA6DA7A7 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5255922CCE399B971A7792CAFFFB2AE8 /* EventMonitor.swift */; };
-		CECD4920FB48BB4AD22A84FE750AB1EC /* Pods-hoplonTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A82EC1C39C73EF17B0EDDDE7CB78D73 /* Pods-hoplonTests-dummy.m */; };
 		D6B2983389480F48F27A0704EEB5DC81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012CBF662282B7C3AA8BA9367FF2F15 /* RetryPolicy.swift */; };
 		E07BD425C4EA9ADF15DDFCDB10D0B2FB /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FF345678CA9104EA19734E0478958 /* MultipartUpload.swift */; };
+		E457DFF3A185C0C14ABDD423E53D4FA8 /* Pods-pistaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D59A68C996A097788AD82CBDCE75EC /* Pods-pistaTests-dummy.m */; };
 		E4E12208D5246E64B7E6CCAE987ADB03 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D62631DC97C8236B95548DC34442726 /* URLRequest+Alamofire.swift */; };
+		E99C9F2B65743F72B4606004B32FCDA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		E9A5AC2F471699CCA516952A5FEB990B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACC67E7DBDE016561E5EB201E4E72D /* DispatchQueue+Alamofire.swift */; };
-		F411B9D6E40A0792C479E3BC60AE862F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		F71789DC91A75033EFB79DB828676451 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509EB660B7CD2969B56181E55A8D43B9 /* Response.swift */; };
+		FDF2AD858826EAE254AF44322A69C832 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		232ADC33615F1742567C477A278EBBCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25F1239DE5383BE90841AD49DB172E1A;
-			remoteInfo = "Pods-hoplon";
-		};
-		5BFC76A0E357E118EBB1EE064BF1AC73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25F1239DE5383BE90841AD49DB172E1A;
-			remoteInfo = "Pods-hoplon";
-		};
-		B2D56577BA64B4C35A90A47EDBDCA956 /* PBXContainerItemProxy */ = {
+		5F472D241AB3884E06D75745F891749B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF903DF43E111410ECA0C288D36FA21A;
 			remoteInfo = SwiftKeychainWrapper;
 		};
-		CF232D921A60AB96CE5BC2F6825A1CEF /* PBXContainerItemProxy */ = {
+		C24D78E05780FCA00E212F849D43087C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5AC29D6C73A1A231370A64D4F11C82;
+			remoteInfo = "Pods-pista";
+		};
+		DA690F542ED87D0634340C14C744EE90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
+		};
+		E0315C4EBCB9044B90283C947ACB1DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5AC29D6C73A1A231370A64D4F11C82;
+			remoteInfo = "Pods-pista";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -97,89 +97,97 @@
 		015FD63E44188AD3B651603524190DA3 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		01BF782E519896244E0180B05F60E8D6 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		03CCCEE101D458B16C3AF7EC7AC86B16 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		058C6CFC34B36AA05117E69A8F3AEF52 /* Pods-hoplon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplon.debug.xcconfig"; sourceTree = "<group>"; };
 		09ACC67E7DBDE016561E5EB201E4E72D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		0E84040366974BC3A7496A463DD6AD11 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		0F4A47AE96AA187059D9BDC81D5A9D29 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		19244B7B8040721AFBDD27EFE2F8A09D /* Pods-hoplonTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hoplonTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1255063386796C684C1D5D6EA07CB18A /* Pods_pistaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pistaTests.framework; path = "Pods-pistaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF2DC330A493F4171F6F777AF5CECBF /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
-		202EBB2FA1224D848ABFAF4CC38CA91B /* Pods_hoplonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hoplonTests.framework; path = "Pods-hoplonTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2119226FE14EA8F23DB46918311E6080 /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
 		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2696A2716535AEC0953F3FE6088D4227 /* Pods_pista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pista.framework; path = "Pods-pista.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B06F84C4C15CDF4A7592C60F0CC56C /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		29C6B80FFD257EC87FA7EEC9771BD37F /* Pods-pistaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pistaTests-umbrella.h"; sourceTree = "<group>"; };
 		2C8FF345678CA9104EA19734E0478958 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		376E3BB5EA278C58C7069CD226C98C62 /* Pods-pistaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pistaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3853422E2A4CBA5FCB572F103F3641C0 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		3B7F14DC6D92103E54D7B152BE6315A6 /* Pods-hoplonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EA4C124A3CA123217F3A9CCBF579904 /* Pods-pista-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pista-Info.plist"; sourceTree = "<group>"; };
+		42CB51165F412D3D03F922A2BFECB38C /* Pods-pistaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pistaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		43FE5895CE7F276814DAB7996BEB1B32 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		452A8CBF9A95CF076DA80ACB22C64C08 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		49BF1113D7FD1EFFD4D3171A879DBD6C /* Pods-hoplonUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplonUITests-Info.plist"; sourceTree = "<group>"; };
-		4F3DDA26DD516F6A7C84917389357EFF /* Pods-hoplonUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hoplonUITests-umbrella.h"; sourceTree = "<group>"; };
 		5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		509EB660B7CD2969B56181E55A8D43B9 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		50F14160205AA10927C47B625D597566 /* Pods-hoplon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hoplon-dummy.m"; sourceTree = "<group>"; };
 		5255922CCE399B971A7792CAFFFB2AE8 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		5492312C85E0A7D36DE3CB8C3864B6B8 /* Pods-hoplon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplon.release.xcconfig"; sourceTree = "<group>"; };
+		5396236860EABDA74EAC9B0D07EE0439 /* Pods-pistaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pistaTests-Info.plist"; sourceTree = "<group>"; };
 		54E40078092AFEB7628866243CC2F9CA /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		59E33ABE0ADDD456F8BC81017E47CA7B /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		5D62631DC97C8236B95548DC34442726 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB209E385CD94C7CAA3F26C64698719 /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
 		5E60A98B8EB9734881B38FC6FB70916D /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		66FD2B632C086389F6E8DAAC6B4CDFF6 /* Pods-hoplonTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hoplonTests-umbrella.h"; sourceTree = "<group>"; };
-		6A82EC1C39C73EF17B0EDDDE7CB78D73 /* Pods-hoplonTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hoplonTests-dummy.m"; sourceTree = "<group>"; };
-		6A98ED22A79204E7EEC4559898A08C49 /* Pods-hoplon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplon-Info.plist"; sourceTree = "<group>"; };
+		64D58EA4D634C14682506F5D69C70068 /* Pods-pistaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pistaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		654832406D5E468E8C2D093EE77C5B6E /* Pods-pista-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pista-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68D59A68C996A097788AD82CBDCE75EC /* Pods-pistaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pistaTests-dummy.m"; sourceTree = "<group>"; };
+		69D7721806A8FBE91C3D093ED600DDE1 /* Pods-pista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pista.debug.xcconfig"; sourceTree = "<group>"; };
+		6D26E3D4C48FDFF639FAEAA75FFA2773 /* Pods-pista.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pista.modulemap"; sourceTree = "<group>"; };
+		7110C39EB5F63B2D0017B4385A793195 /* Pods-pistaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pistaTests.release.xcconfig"; sourceTree = "<group>"; };
+		742960DDBB4E5D4E8AE0DD976C59B792 /* Pods-pistaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pistaUITests-Info.plist"; sourceTree = "<group>"; };
 		77B13A16D9064408AABB97F8C39E04AA /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		7AC7B400F9D3B3832AEBD02A37BA3396 /* Pods-hoplonTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplonTests-Info.plist"; sourceTree = "<group>"; };
+		79AF23179755F13CFE603712377C3EAC /* Pods-pistaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pistaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BF81900FA750D85AD32844DD563BE39 /* Pods-pista-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pista-frameworks.sh"; sourceTree = "<group>"; };
 		7C70595954CB58E8F114E7FF34A9AD92 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		7D823E352BA35CAC0A4A456C23869460 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		7E7F777806CF58FC4EC3DFF9EC38713C /* Pods-pistaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pistaUITests.modulemap"; sourceTree = "<group>"; };
 		7F88C328F7D774CE13014D031E29F10B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		81F5EEE929576E418135B3B54707867C /* Pods-pistaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pistaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		820B5AED635AD7110DB8DB04602B1C13 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = SwiftKeychainWrapper/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		83AFC3645BCF5906CC432D07208EDE70 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		85F536C45436F4421A2F7184461B7B53 /* Pods-pista-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pista-acknowledgements.plist"; sourceTree = "<group>"; };
 		86E7CCA27A1A931073A519A6DDAC8BAA /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8CF76B5449FB6B6DE17EAF4F2BCBFC4C /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		8F3A98F663162D2CDEA72CD117005D06 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		959F225BCBD93F1DCBBC47A46A127C97 /* Pods-hoplonUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hoplonUITests.modulemap"; sourceTree = "<group>"; };
-		96C52188C5037EE2BBF6E7507F34D78A /* Pods-hoplonUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplonUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C855296B1738611458B789061B51568 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ECCE4C755F4A6244FDEA2CAEA8E2D48 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		9F0DA414784DB94893BA6A1E84263B97 /* Pods-pistaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pistaUITests-umbrella.h"; sourceTree = "<group>"; };
 		9FDC518F04A214810144025D48C3CC91 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		9FDDD6512104A08B9F1AE49617939829 /* Pods-hoplon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hoplon.modulemap"; sourceTree = "<group>"; };
 		A08C9CDC03D3FAAB3B4F2EC276AFCF8D /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		A52E920234EB2B976A82D9C8AAB52C37 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		A71FE23F313906B0DE36EF28D5192583 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		A969D391819C669E38964F321CD5AD37 /* Pods-hoplon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplon-acknowledgements.plist"; sourceTree = "<group>"; };
-		AC1C057D4E032B49E44695A5ABB45751 /* Pods-hoplonUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hoplonUITests-dummy.m"; sourceTree = "<group>"; };
+		AE0B12D5E750C8126A345AB4E1A4DF8B /* Pods_pistaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pistaUITests.framework; path = "Pods-pistaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20C1B8F80A205F2212FC191325424F4 /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
-		B63EC273A41535D06110CAED6AD57155 /* Pods-hoplonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplonUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BBB77539B76A019904D4F6092AF6386C /* Pods-hoplonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA97AD032535B7AE71BCD90412248045 /* Pods-pista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pista.release.xcconfig"; sourceTree = "<group>"; };
 		C683D3CC77FD40A55F6B7E08C7A1193A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		CABBA29F25D6A10E520CBDF89E136412 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		CC3817E8B5F6D049E335978227E20B64 /* Pods-hoplon-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hoplon-frameworks.sh"; sourceTree = "<group>"; };
-		CDD1AC1D06C37CEE880CFAB21A25E9CF /* Pods-hoplonTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-hoplonTests.modulemap"; sourceTree = "<group>"; };
-		D0D0DD9EBF52D50601A7B75DA47A557A /* Pods-hoplon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hoplon-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D891B5ADDB4F7A4376BDC45893DBD5B6 /* Pods-hoplonUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hoplonUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA8BD8B6276E36B1E1FCFBCB8F8DFC7C /* SwiftKeychainWrapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftKeychainWrapper-Info.plist"; sourceTree = "<group>"; };
-		DB729F29C1FF5CBA0FF483A65B6C76C9 /* Pods_hoplon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hoplon.framework; path = "Pods-hoplon.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE8B68A77D917205B355D17E21CD7A4 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		E0494A4B3E8DC30B8AF0D30ED4171E24 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		E1552A03D3FB633D47E555FA81AA9073 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		E21DC9100DBC45E72380903C16A58532 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
-		E3132E38EAB39B2A287B406BB7AB3A26 /* Pods-hoplonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hoplonTests.release.xcconfig"; sourceTree = "<group>"; };
-		E8F3251DF411B0C12A99978C90715865 /* Pods-hoplon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hoplon-umbrella.h"; sourceTree = "<group>"; };
-		F133CDB9A9BE5BAAC8610FCA97782624 /* Pods_hoplonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hoplonUITests.framework; path = "Pods-hoplonUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F8955CE5AC90D682AF652273D40FB9 /* Pods-pistaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pistaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E59F81E2EB655DC88E5E14E5C3A0465D /* Pods-pista-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pista-dummy.m"; sourceTree = "<group>"; };
+		EA4175769DFE9A6DE9C32CAED2A7D97C /* Pods-pistaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pistaUITests-dummy.m"; sourceTree = "<group>"; };
 		F1CB8F34FC40B5DF165B651CBA28FD2F /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		F216D7410A25699E09F15D00F55EC82E /* Pods-pista-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pista-umbrella.h"; sourceTree = "<group>"; };
+		F2932EA3927E0409D48CCBC4B14C466C /* Pods-pistaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pistaTests.modulemap"; sourceTree = "<group>"; };
 		F439086C1199DD46D5FD66DD64096C36 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		F886CA14C02ECF47D09D569DEC8D2562 /* Pods-hoplonTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hoplonTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FE7CCAC0E0FB234B9A87DD23FB0A1A21 /* Pods-pistaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pistaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		77D6EB56AEB7EE881797A916F4753BE4 /* Frameworks */ = {
+		594E11E84AF8C054BAFEA5803C926888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F411B9D6E40A0792C479E3BC60AE862F /* Foundation.framework in Frameworks */,
+				8D6C477678E7077D135AD8DB656F1BFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75BCE4CB6E247AADB3952A82FD2D167E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99C9F2B65743F72B4606004B32FCDA8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,25 +208,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E77BE178FCEC95D7D6A38E28685FC86C /* Frameworks */ = {
+		D8F4720A76825B29E84B3560698A79F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74A70A802CDFC857DBDB972D9C32F199 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBCF0D224FD048820DAEF9BD6315A5C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				870216AF8ED57D45C615F40334107862 /* Foundation.framework in Frameworks */,
+				FDF2AD858826EAE254AF44322A69C832 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007A498B202766CEBE558D7E5DE55D54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				065E03F53FC60801F7AB175881DEDD82 /* Pods-pista */,
+				4CEDCE33DED984B38C1523E7A76264C4 /* Pods-pistaTests */,
+				B501F00ED8C6A2B9879EB16B51695DE0 /* Pods-pistaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		065E03F53FC60801F7AB175881DEDD82 /* Pods-pista */ = {
+			isa = PBXGroup;
+			children = (
+				6D26E3D4C48FDFF639FAEAA75FFA2773 /* Pods-pista.modulemap */,
+				654832406D5E468E8C2D093EE77C5B6E /* Pods-pista-acknowledgements.markdown */,
+				85F536C45436F4421A2F7184461B7B53 /* Pods-pista-acknowledgements.plist */,
+				E59F81E2EB655DC88E5E14E5C3A0465D /* Pods-pista-dummy.m */,
+				7BF81900FA750D85AD32844DD563BE39 /* Pods-pista-frameworks.sh */,
+				3EA4C124A3CA123217F3A9CCBF579904 /* Pods-pista-Info.plist */,
+				F216D7410A25699E09F15D00F55EC82E /* Pods-pista-umbrella.h */,
+				69D7721806A8FBE91C3D093ED600DDE1 /* Pods-pista.debug.xcconfig */,
+				BA97AD032535B7AE71BCD90412248045 /* Pods-pista.release.xcconfig */,
+			);
+			name = "Pods-pista";
+			path = "Target Support Files/Pods-pista";
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,20 +268,20 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
-		24F0BD51C4D95A16A61CDA46BC16A6B3 /* Pods-hoplonTests */ = {
+		4CEDCE33DED984B38C1523E7A76264C4 /* Pods-pistaTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDD1AC1D06C37CEE880CFAB21A25E9CF /* Pods-hoplonTests.modulemap */,
-				19244B7B8040721AFBDD27EFE2F8A09D /* Pods-hoplonTests-acknowledgements.markdown */,
-				F886CA14C02ECF47D09D569DEC8D2562 /* Pods-hoplonTests-acknowledgements.plist */,
-				6A82EC1C39C73EF17B0EDDDE7CB78D73 /* Pods-hoplonTests-dummy.m */,
-				7AC7B400F9D3B3832AEBD02A37BA3396 /* Pods-hoplonTests-Info.plist */,
-				66FD2B632C086389F6E8DAAC6B4CDFF6 /* Pods-hoplonTests-umbrella.h */,
-				BBB77539B76A019904D4F6092AF6386C /* Pods-hoplonTests.debug.xcconfig */,
-				E3132E38EAB39B2A287B406BB7AB3A26 /* Pods-hoplonTests.release.xcconfig */,
+				F2932EA3927E0409D48CCBC4B14C466C /* Pods-pistaTests.modulemap */,
+				81F5EEE929576E418135B3B54707867C /* Pods-pistaTests-acknowledgements.markdown */,
+				FE7CCAC0E0FB234B9A87DD23FB0A1A21 /* Pods-pistaTests-acknowledgements.plist */,
+				68D59A68C996A097788AD82CBDCE75EC /* Pods-pistaTests-dummy.m */,
+				5396236860EABDA74EAC9B0D07EE0439 /* Pods-pistaTests-Info.plist */,
+				29C6B80FFD257EC87FA7EEC9771BD37F /* Pods-pistaTests-umbrella.h */,
+				E2F8955CE5AC90D682AF652273D40FB9 /* Pods-pistaTests.debug.xcconfig */,
+				7110C39EB5F63B2D0017B4385A793195 /* Pods-pistaTests.release.xcconfig */,
 			);
-			name = "Pods-hoplonTests";
-			path = "Target Support Files/Pods-hoplonTests";
+			name = "Pods-pistaTests";
+			path = "Target Support Files/Pods-pistaTests";
 			sourceTree = "<group>";
 		};
 		914A513569449069DC2EEC427370446E /* SwiftKeychainWrapper */ = {
@@ -281,6 +308,34 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		A13D0842BD460929534555EFCA05551F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				2696A2716535AEC0953F3FE6088D4227 /* Pods_pista.framework */,
+				1255063386796C684C1D5D6EA07CB18A /* Pods_pistaTests.framework */,
+				AE0B12D5E750C8126A345AB4E1A4DF8B /* Pods_pistaUITests.framework */,
+				5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B501F00ED8C6A2B9879EB16B51695DE0 /* Pods-pistaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E7F777806CF58FC4EC3DFF9EC38713C /* Pods-pistaUITests.modulemap */,
+				64D58EA4D634C14682506F5D69C70068 /* Pods-pistaUITests-acknowledgements.markdown */,
+				42CB51165F412D3D03F922A2BFECB38C /* Pods-pistaUITests-acknowledgements.plist */,
+				EA4175769DFE9A6DE9C32CAED2A7D97C /* Pods-pistaUITests-dummy.m */,
+				742960DDBB4E5D4E8AE0DD976C59B792 /* Pods-pistaUITests-Info.plist */,
+				9F0DA414784DB94893BA6A1E84263B97 /* Pods-pistaUITests-umbrella.h */,
+				376E3BB5EA278C58C7069CD226C98C62 /* Pods-pistaUITests.debug.xcconfig */,
+				79AF23179755F13CFE603712377C3EAC /* Pods-pistaUITests.release.xcconfig */,
+			);
+			name = "Pods-pistaUITests";
+			path = "Target Support Files/Pods-pistaUITests";
 			sourceTree = "<group>";
 		};
 		C10803483CF8DEE6B6A72E132494F576 /* Alamofire */ = {
@@ -333,58 +388,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C7BAE2E549C40C2D1F4A1AF9D48D8DAC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D6ACF19AAF44B0D3EF691888749840D2 /* Pods-hoplon */,
-				24F0BD51C4D95A16A61CDA46BC16A6B3 /* Pods-hoplonTests */,
-				CDA4B82B34FC9E0321198862FF8517D0 /* Pods-hoplonUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CDA4B82B34FC9E0321198862FF8517D0 /* Pods-hoplonUITests */ = {
-			isa = PBXGroup;
-			children = (
-				959F225BCBD93F1DCBBC47A46A127C97 /* Pods-hoplonUITests.modulemap */,
-				D891B5ADDB4F7A4376BDC45893DBD5B6 /* Pods-hoplonUITests-acknowledgements.markdown */,
-				96C52188C5037EE2BBF6E7507F34D78A /* Pods-hoplonUITests-acknowledgements.plist */,
-				AC1C057D4E032B49E44695A5ABB45751 /* Pods-hoplonUITests-dummy.m */,
-				49BF1113D7FD1EFFD4D3171A879DBD6C /* Pods-hoplonUITests-Info.plist */,
-				4F3DDA26DD516F6A7C84917389357EFF /* Pods-hoplonUITests-umbrella.h */,
-				B63EC273A41535D06110CAED6AD57155 /* Pods-hoplonUITests.debug.xcconfig */,
-				3B7F14DC6D92103E54D7B152BE6315A6 /* Pods-hoplonUITests.release.xcconfig */,
-			);
-			name = "Pods-hoplonUITests";
-			path = "Target Support Files/Pods-hoplonUITests";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				C33837CB4C953791826B05B222707887 /* Pods */,
-				FB257BA27B25626D9108BF191FBECA33 /* Products */,
-				C7BAE2E549C40C2D1F4A1AF9D48D8DAC /* Targets Support Files */,
+				A13D0842BD460929534555EFCA05551F /* Products */,
+				007A498B202766CEBE558D7E5DE55D54 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D6ACF19AAF44B0D3EF691888749840D2 /* Pods-hoplon */ = {
-			isa = PBXGroup;
-			children = (
-				9FDDD6512104A08B9F1AE49617939829 /* Pods-hoplon.modulemap */,
-				D0D0DD9EBF52D50601A7B75DA47A557A /* Pods-hoplon-acknowledgements.markdown */,
-				A969D391819C669E38964F321CD5AD37 /* Pods-hoplon-acknowledgements.plist */,
-				50F14160205AA10927C47B625D597566 /* Pods-hoplon-dummy.m */,
-				CC3817E8B5F6D049E335978227E20B64 /* Pods-hoplon-frameworks.sh */,
-				6A98ED22A79204E7EEC4559898A08C49 /* Pods-hoplon-Info.plist */,
-				E8F3251DF411B0C12A99978C90715865 /* Pods-hoplon-umbrella.h */,
-				058C6CFC34B36AA05117E69A8F3AEF52 /* Pods-hoplon.debug.xcconfig */,
-				5492312C85E0A7D36DE3CB8C3864B6B8 /* Pods-hoplon.release.xcconfig */,
-			);
-			name = "Pods-hoplon";
-			path = "Target Support Files/Pods-hoplon";
 			sourceTree = "<group>";
 		};
 		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
@@ -396,42 +408,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FB257BA27B25626D9108BF191FBECA33 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
-				DB729F29C1FF5CBA0FF483A65B6C76C9 /* Pods_hoplon.framework */,
-				202EBB2FA1224D848ABFAF4CC38CA91B /* Pods_hoplonTests.framework */,
-				F133CDB9A9BE5BAAC8610FCA97782624 /* Pods_hoplonUITests.framework */,
-				5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3BC1595AE8EF442ACF1B33C584A22D1D /* Headers */ = {
+		897E43436DBD4626B94A61D599D4F395 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82FD1B17EB0D6A11664D9113A6A44597 /* Pods-hoplonTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C2CA4025F8E08672A3F5EA9076EDF94 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B597DE52C374FF4E65ACBA634D479CF1 /* Pods-hoplonUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C36B8ED12211421C0E21B759F972712 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323FDF4F834C74F0B8FACFE56024874E /* Pods-hoplon-umbrella.h in Headers */,
+				56ECB731E8041B31D597635F628947E4 /* Pods-pista-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +424,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB6CF9FECCBF490709A65A9F4A64681 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5338023FB2D84FFE4A3B77405430F4F /* Pods-pistaUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,65 +444,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F298D5A4D444B2AA9368F94153DF19F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CC06D542D4E70AE3AB24B01CE834F1 /* Pods-pistaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		25F1239DE5383BE90841AD49DB172E1A /* Pods-hoplon */ = {
+		605853E31A9C4AD8EB7CA782C98B7875 /* Pods-pistaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C49F016193AE2CC7AC2DD6D6EACE105 /* Build configuration list for PBXNativeTarget "Pods-hoplon" */;
+			buildConfigurationList = 7071E8686944D49C90D542FED874A7F9 /* Build configuration list for PBXNativeTarget "Pods-pistaTests" */;
 			buildPhases = (
-				8C36B8ED12211421C0E21B759F972712 /* Headers */,
-				4FE476E030D6B2C9769D630742173AF0 /* Sources */,
-				E77BE178FCEC95D7D6A38E28685FC86C /* Frameworks */,
-				84B1EBE401ABC9BBAEAA92D29E54C0B4 /* Resources */,
+				F298D5A4D444B2AA9368F94153DF19F7 /* Headers */,
+				E10A528D7334B852C1FBFE58CAD0D617 /* Sources */,
+				75BCE4CB6E247AADB3952A82FD2D167E /* Frameworks */,
+				F71756EFC91A4186DB0EC67B8F06584D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F50D21D8CCDB36343E67F57173751B4 /* PBXTargetDependency */,
-				088286783C3E87BB12D1B02904064DAB /* PBXTargetDependency */,
+				E819E8E86A3D8753F39A9BB4057658FD /* PBXTargetDependency */,
 			);
-			name = "Pods-hoplon";
-			productName = "Pods-hoplon";
-			productReference = DB729F29C1FF5CBA0FF483A65B6C76C9 /* Pods_hoplon.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A41A41CC73323F49C3EBFB48C327206D /* Pods-hoplonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F4CCCA4E10587A468D01B51313F37D1F /* Build configuration list for PBXNativeTarget "Pods-hoplonTests" */;
-			buildPhases = (
-				3BC1595AE8EF442ACF1B33C584A22D1D /* Headers */,
-				CF87585A598F93374FD285B3B1C38E0A /* Sources */,
-				77D6EB56AEB7EE881797A916F4753BE4 /* Frameworks */,
-				A7C223E4A8718D4B79ED59744EDDEB7F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5429628E30E7F1A7E2CE112970AF0797 /* PBXTargetDependency */,
-			);
-			name = "Pods-hoplonTests";
-			productName = "Pods-hoplonTests";
-			productReference = 202EBB2FA1224D848ABFAF4CC38CA91B /* Pods_hoplonTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C5284499B72D59B02213C6D0EC36C009 /* Pods-hoplonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 924848217CD76CCF3AD2D68819165219 /* Build configuration list for PBXNativeTarget "Pods-hoplonUITests" */;
-			buildPhases = (
-				3C2CA4025F8E08672A3F5EA9076EDF94 /* Headers */,
-				FC18C4C55B42D140CAF4CAE6E1DCDD7B /* Sources */,
-				FBCF0D224FD048820DAEF9BD6315A5C1 /* Frameworks */,
-				C149F9EC712110601798C687CA70C210 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF6EDA10608276B80840273D20B26BE3 /* PBXTargetDependency */,
-			);
-			name = "Pods-hoplonUITests";
-			productName = "Pods-hoplonUITests";
-			productReference = F133CDB9A9BE5BAAC8610FCA97782624 /* Pods_hoplonUITests.framework */;
+			name = "Pods-pistaTests";
+			productName = "Pods-pistaTests";
+			productReference = 1255063386796C684C1D5D6EA07CB18A /* Pods_pistaTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */ = {
@@ -531,6 +492,25 @@
 			productReference = 5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CF9920E7D758A6BD02E569C872F18C26 /* Pods-pistaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D47586CC7EFA300C9F5622C7D53E40 /* Build configuration list for PBXNativeTarget "Pods-pistaUITests" */;
+			buildPhases = (
+				BDB6CF9FECCBF490709A65A9F4A64681 /* Headers */,
+				00756A81A3B530D832828FB779F10058 /* Sources */,
+				594E11E84AF8C054BAFEA5803C926888 /* Frameworks */,
+				894C2AF7D83CE225A33F94A623B3BF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8BADA68A4A163BFEB03C7E78681134A /* PBXTargetDependency */,
+			);
+			name = "Pods-pistaUITests";
+			productName = "Pods-pistaUITests";
+			productReference = AE0B12D5E750C8126A345AB4E1A4DF8B /* Pods_pistaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -547,6 +527,26 @@
 			name = Alamofire;
 			productName = Alamofire;
 			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE5AC29D6C73A1A231370A64D4F11C82 /* Pods-pista */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3115EA42E299D7531B11B43A41214862 /* Build configuration list for PBXNativeTarget "Pods-pista" */;
+			buildPhases = (
+				897E43436DBD4626B94A61D599D4F395 /* Headers */,
+				2F8A034B0A0378537E8462EAB1FE87A6 /* Sources */,
+				D8F4720A76825B29E84B3560698A79F9 /* Frameworks */,
+				F1BBD19349CA0EC9B172474FFBE0DF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA4D22665B3492CEC1028F77D528608C /* PBXTargetDependency */,
+				A243CDA77B5B1F223C0F39537CE60160 /* PBXTargetDependency */,
+			);
+			name = "Pods-pista";
+			productName = "Pods-pista";
+			productReference = 2696A2716535AEC0953F3FE6088D4227 /* Pods_pista.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -566,14 +566,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = FB257BA27B25626D9108BF191FBECA33 /* Products */;
+			productRefGroup = A13D0842BD460929534555EFCA05551F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
-				25F1239DE5383BE90841AD49DB172E1A /* Pods-hoplon */,
-				A41A41CC73323F49C3EBFB48C327206D /* Pods-hoplonTests */,
-				C5284499B72D59B02213C6D0EC36C009 /* Pods-hoplonUITests */,
+				EE5AC29D6C73A1A231370A64D4F11C82 /* Pods-pista */,
+				605853E31A9C4AD8EB7CA782C98B7875 /* Pods-pistaTests */,
+				CF9920E7D758A6BD02E569C872F18C26 /* Pods-pistaUITests */,
 				CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */,
 			);
 		};
@@ -587,14 +587,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B1EBE401ABC9BBAEAA92D29E54C0B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7C223E4A8718D4B79ED59744EDDEB7F /* Resources */ = {
+		894C2AF7D83CE225A33F94A623B3BF0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,7 +601,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C149F9EC712110601798C687CA70C210 /* Resources */ = {
+		F1BBD19349CA0EC9B172474FFBE0DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F71756EFC91A4186DB0EC67B8F06584D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -618,6 +618,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00756A81A3B530D832828FB779F10058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6D21B0253149DC72AEB42C51437A72 /* Pods-pistaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8A034B0A0378537E8462EAB1FE87A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE910203EFCD5B0CF00D54FE48065D7 /* Pods-pista-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		330DE2BD20DFC08839359EADFE5BBCF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,14 +641,6 @@
 				853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */,
 				3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */,
 				1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FE476E030D6B2C9769D630742173AF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B2C4D235DACA4303990742BCFFB63A1 /* Pods-hoplon-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,48 +684,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF87585A598F93374FD285B3B1C38E0A /* Sources */ = {
+		E10A528D7334B852C1FBFE58CAD0D617 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECD4920FB48BB4AD22A84FE750AB1EC /* Pods-hoplonTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC18C4C55B42D140CAF4CAE6E1DCDD7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7704E035B15939B7041F8C40537C3C47 /* Pods-hoplonUITests-dummy.m in Sources */,
+				E457DFF3A185C0C14ABDD423E53D4FA8 /* Pods-pistaTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		088286783C3E87BB12D1B02904064DAB /* PBXTargetDependency */ = {
+		A243CDA77B5B1F223C0F39537CE60160 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftKeychainWrapper;
 			target = CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */;
-			targetProxy = B2D56577BA64B4C35A90A47EDBDCA956 /* PBXContainerItemProxy */;
+			targetProxy = 5F472D241AB3884E06D75745F891749B /* PBXContainerItemProxy */;
 		};
-		5429628E30E7F1A7E2CE112970AF0797 /* PBXTargetDependency */ = {
+		E819E8E86A3D8753F39A9BB4057658FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-hoplon";
-			target = 25F1239DE5383BE90841AD49DB172E1A /* Pods-hoplon */;
-			targetProxy = 232ADC33615F1742567C477A278EBBCE /* PBXContainerItemProxy */;
+			name = "Pods-pista";
+			target = EE5AC29D6C73A1A231370A64D4F11C82 /* Pods-pista */;
+			targetProxy = C24D78E05780FCA00E212F849D43087C /* PBXContainerItemProxy */;
 		};
-		8F50D21D8CCDB36343E67F57173751B4 /* PBXTargetDependency */ = {
+		E8BADA68A4A163BFEB03C7E78681134A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-pista";
+			target = EE5AC29D6C73A1A231370A64D4F11C82 /* Pods-pista */;
+			targetProxy = E0315C4EBCB9044B90283C947ACB1DC7 /* PBXContainerItemProxy */;
+		};
+		EA4D22665B3492CEC1028F77D528608C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = CF232D921A60AB96CE5BC2F6825A1CEF /* PBXContainerItemProxy */;
-		};
-		DF6EDA10608276B80840273D20B26BE3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-hoplon";
-			target = 25F1239DE5383BE90841AD49DB172E1A /* Pods-hoplon */;
-			targetProxy = 5BFC76A0E357E118EBB1EE064BF1AC73 /* PBXContainerItemProxy */;
+			targetProxy = DA690F542ED87D0634340C14C744EE90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -857,83 +857,6 @@
 			};
 			name = Debug;
 		};
-		1A58870774E685C75BEF52F55EBB75A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7F14DC6D92103E54D7B152BE6315A6 /* Pods-hoplonUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplonUITests/Pods-hoplonUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplonUITests/Pods-hoplonUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		243C40990304C490A30BEFB63AECD8AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63EC273A41535D06110CAED6AD57155 /* Pods-hoplonUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplonUITests/Pods-hoplonUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplonUITests/Pods-hoplonUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		43CE06E37A8B99DB615367984EBD4567 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1CB8F34FC40B5DF165B651CBA28FD2F /* SwiftKeychainWrapper.xcconfig */;
@@ -970,9 +893,9 @@
 			};
 			name = Release;
 		};
-		59A9A38D6EC90D34C557DE633BC07F32 /* Release */ = {
+		949B5A7F842CE30890E4C7B2CA183450 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5492312C85E0A7D36DE3CB8C3864B6B8 /* Pods-hoplon.release.xcconfig */;
+			baseConfigurationReference = 7110C39EB5F63B2D0017B4385A793195 /* Pods-pistaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -985,7 +908,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplon/Pods-hoplon-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-pistaTests/Pods-pistaTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -994,7 +917,161 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplon/Pods-hoplon.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-pistaTests/Pods-pistaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9646BD7A7A21CEF76F9ED49AA3B32F6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376E3BB5EA278C58C7069CD226C98C62 /* Pods-pistaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pistaUITests/Pods-pistaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pistaUITests/Pods-pistaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F35A1A3FE096CCB691B98AC96391EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F8955CE5AC90D682AF652273D40FB9 /* Pods-pistaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pistaTests/Pods-pistaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pistaTests/Pods-pistaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F9EFE23CC3470B820ED46791226751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79AF23179755F13CFE603712377C3EAC /* Pods-pistaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pistaUITests/Pods-pistaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pistaUITests/Pods-pistaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA4F9E168389C9B38059E7AE46B0B515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA97AD032535B7AE71BCD90412248045 /* Pods-pista.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-pista/Pods-pista-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pista/Pods-pista.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1069,9 +1146,9 @@
 			};
 			name = Release;
 		};
-		CA76B2815FB4557860E882A3A0376DA8 /* Debug */ = {
+		F565F3DE913F0AF102D976821072998C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058C6CFC34B36AA05117E69A8F3AEF52 /* Pods-hoplon.debug.xcconfig */;
+			baseConfigurationReference = 69D7721806A8FBE91C3D093ED600DDE1 /* Pods-pista.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1084,7 +1161,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplon/Pods-hoplon-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-pista/Pods-pista-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1093,84 +1170,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplon/Pods-hoplon.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F11AAEFB4ED64D4DA209178834B3F665 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3132E38EAB39B2A287B406BB7AB3A26 /* Pods-hoplonTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F30226ECDF2C5498409D2C94854DE71C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBB77539B76A019904D4F6092AF6386C /* Pods-hoplonTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-pista/Pods-pista.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1224,11 +1224,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C49F016193AE2CC7AC2DD6D6EACE105 /* Build configuration list for PBXNativeTarget "Pods-hoplon" */ = {
+		11D47586CC7EFA300C9F5622C7D53E40 /* Build configuration list for PBXNativeTarget "Pods-pistaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA76B2815FB4557860E882A3A0376DA8 /* Debug */,
-				59A9A38D6EC90D34C557DE633BC07F32 /* Release */,
+				9646BD7A7A21CEF76F9ED49AA3B32F6C /* Debug */,
+				9F9EFE23CC3470B820ED46791226751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3115EA42E299D7531B11B43A41214862 /* Build configuration list for PBXNativeTarget "Pods-pista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F565F3DE913F0AF102D976821072998C /* Debug */,
+				AA4F9E168389C9B38059E7AE46B0B515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1251,11 +1260,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		924848217CD76CCF3AD2D68819165219 /* Build configuration list for PBXNativeTarget "Pods-hoplonUITests" */ = {
+		7071E8686944D49C90D542FED874A7F9 /* Build configuration list for PBXNativeTarget "Pods-pistaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				243C40990304C490A30BEFB63AECD8AB /* Debug */,
-				1A58870774E685C75BEF52F55EBB75A9 /* Release */,
+				9F35A1A3FE096CCB691B98AC96391EBE /* Debug */,
+				949B5A7F842CE30890E4C7B2CA183450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1265,15 +1274,6 @@
 			buildConfigurations = (
 				0D68731B1708A659462C629F01084692 /* Debug */,
 				43CE06E37A8B99DB615367984EBD4567 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F4CCCA4E10587A468D01B51313F37D1F /* Build configuration list for PBXNativeTarget "Pods-hoplonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F30226ECDF2C5498409D2C94854DE71C /* Debug */,
-				F11AAEFB4ED64D4DA209178834B3F665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

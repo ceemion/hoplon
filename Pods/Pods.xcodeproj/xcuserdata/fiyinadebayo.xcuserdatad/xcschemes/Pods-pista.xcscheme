@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25F1239DE5383BE90841AD49DB172E1A"
-               BuildableName = "Pods_hoplon.framework"
-               BlueprintName = "Pods-hoplon"
+               BlueprintIdentifier = "EE5AC29D6C73A1A231370A64D4F11C82"
+               BuildableName = "Pods_pista.framework"
+               BlueprintName = "Pods-pista"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A41A41CC73323F49C3EBFB48C327206D"
-               BuildableName = "Pods_hoplonTests.framework"
-               BlueprintName = "Pods-hoplonTests"
+               BlueprintIdentifier = "CF9920E7D758A6BD02E569C872F18C26"
+               BuildableName = "Pods_pistaUITests.framework"
+               BlueprintName = "Pods-pistaUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

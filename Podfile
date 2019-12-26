@@ -9,12 +9,12 @@ target 'pista' do
   pod 'SwiftKeychainWrapper', '~> 3.4'
   pod 'Alamofire', '~> 5.0.0-rc.2'
 
-  target 'hoplonTests' do
+  target 'pistaTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'hoplonUITests' do
+  target 'pistaUITests' do
     inherit! :search_paths
     # Pods for testing
   end

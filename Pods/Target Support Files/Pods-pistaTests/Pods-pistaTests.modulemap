@@ -1,0 +1,6 @@
+framework module Pods_pistaTests {
+  umbrella header "Pods-pistaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

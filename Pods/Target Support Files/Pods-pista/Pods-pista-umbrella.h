@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_hoplonUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_hoplonUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_pistaVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_pistaVersionString[];
 
