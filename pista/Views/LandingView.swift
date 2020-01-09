@@ -20,9 +20,10 @@ struct LandingView: View {
                     .scaledToFit()
                     .frame(width: 100, height: 100)
 
-                Text("Hoplon")
+                Text("Pista")
                     .foregroundColor(Color("primary"))
                     .font(Font.custom(Constants.Font.logo, size: 30))
+                    .tracking(3.0)
                 Text("Track Lenders and Borrowers")
                     .foregroundColor(Color("gray"))
                     .font(Font.custom(Constants.Font.title, size: 14))

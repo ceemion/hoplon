@@ -19,8 +19,8 @@ final class UserAccount: ObservableObject {
     @Published var email: String = ""
     @Published var phone: String = ""
 
-    @Published var loginEmail: String = "f-003@f.com"
-    @Published var loginPassword: String = "password$123"
+    @Published var loginEmail: String = ""
+    @Published var loginPassword: String = ""
 
     @Published var newFullName: String = ""
     @Published var newEmail: String = ""

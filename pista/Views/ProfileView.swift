@@ -47,22 +47,12 @@ struct ProfileView: View {
             }
             .navigationBarTitle("Profile")
             .navigationBarItems(trailing:
-                HStack(alignment: .center, spacing: 0) {
-                    Button(action: { print("edit btn tapped") }) {
-                        Image(systemName: "square.and.pencil")
-                            .imageScale(.small)
-                            .foregroundColor(Color.gray)
-                            .accessibility(label: Text("Edit Profile"))
-                            .padding()
-                    }
-
-                    Button(action: { self.userAccount.logout() }) {
-                        Image(systemName: "power")
-                            .imageScale(.small)
-                            .foregroundColor(Color("danger"))
-                            .accessibility(label: Text("Logout"))
-                            .padding()
-                    }
+                Button(action: { self.userAccount.logout() }) {
+                    Image(systemName: "power")
+                        .imageScale(.small)
+                        .foregroundColor(Color("danger"))
+                        .accessibility(label: Text("Logout"))
+                        .padding()
                 }
             )
         }
