@@ -61,6 +61,9 @@ struct PersonsView: View {
                                 VStack(spacing: 10) {
                                     Text("No persons here yet.")
                                     Text("Lent or Borrowed? Add a new contact now.")
+                                    HStack {
+                                        Spacer()
+                                    }
                                 }
                                 .font(.footnote)
                                 .foregroundColor(Color.gray)
@@ -74,10 +77,9 @@ struct PersonsView: View {
                                             .font(.body)
                                             .padding(.vertical, 20)
                                             .padding(.horizontal, 10)
-                                            .background(Color("rowsBg"))
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 10)
-                                                    .stroke(Color("itemBorder").opacity(0.2), lineWidth: 1))
+                                            .background(
+                                                RoundedRectangle(cornerRadius: 10, style: .continuous)
+                                                    .fill(Color("rowsBg")))
                                     }
                                 }
                             }
