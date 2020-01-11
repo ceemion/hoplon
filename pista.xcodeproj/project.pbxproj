@@ -49,6 +49,7 @@
 		36C6376423A6E1C50045C6E5 /* NewYorkSmall-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375823A6E1C50045C6E5 /* NewYorkSmall-Regular.otf */; };
 		36C6376523A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 36C6375923A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf */; };
 		36D9BB3B5483659E2427AD2E /* Pods_pistaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE48A8DA333976ADE704A88A /* Pods_pistaUITests.framework */; };
+		36EFB64023CA5B2B005752D5 /* PistaFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFB63F23CA5B2B005752D5 /* PistaFunctions.swift */; };
 		A1F621061225ED03ADDF8D63 /* Pods_pista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE70C287F8C901984724498 /* Pods_pista.framework */; };
 		B2D2A665136F066FCE70A3BF /* Pods_pistaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3A292FFA36CCF7D365DE3E /* Pods_pistaTests.framework */; };
 /* End PBXBuildFile section */
@@ -121,6 +122,7 @@
 		36C6375723A6E1C50045C6E5 /* NewYorkSmall-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Heavy.otf"; sourceTree = "<group>"; };
 		36C6375823A6E1C50045C6E5 /* NewYorkSmall-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-Regular.otf"; sourceTree = "<group>"; };
 		36C6375923A6E1C50045C6E5 /* NewYorkSmall-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkSmall-MediumItalic.otf"; sourceTree = "<group>"; };
+		36EFB63F23CA5B2B005752D5 /* PistaFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PistaFunctions.swift; sourceTree = "<group>"; };
 		420496FEA73F3E61CCD75D08 /* Pods-hoplonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoplonTests.debug.xcconfig"; path = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53B26D661B2A15C940598AD1 /* Pods-pistaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pistaTests.release.xcconfig"; path = "Target Support Files/Pods-pistaTests/Pods-pistaTests.release.xcconfig"; sourceTree = "<group>"; };
 		679B061560D967487653112E /* Pods-hoplonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hoplonTests.release.xcconfig"; path = "Target Support Files/Pods-hoplonTests/Pods-hoplonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			children = (
 				3651402F2399578B00CABF31 /* Constants.swift */,
 				36C63746239F38580045C6E5 /* Form.swift */,
+				36EFB63F23CA5B2B005752D5 /* PistaFunctions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				362105B6238B354E008240B2 /* PersonsView.swift in Sources */,
 				36727C3223A7C64800E89102 /* CreateAccountView.swift in Sources */,
 				36514041239A4E6300CABF31 /* NewLendBorrow.swift in Sources */,
+				36EFB64023CA5B2B005752D5 /* PistaFunctions.swift in Sources */,
 				36C63743239F25D80045C6E5 /* LendAndBorrow.swift in Sources */,
 				3651403A23995D5800CABF31 /* PersonsViewModel.swift in Sources */,
 				3621058A238B2D08008240B2 /* ContentView.swift in Sources */,

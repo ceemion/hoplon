@@ -17,30 +17,29 @@ struct PersonDetailsView: View {
 
     var body: some View {
         VStack {
-            HStack {
-                Button(action: { phoneCallAction(self.person.phone_number) }) {
+            HStack(alignment: .center, spacing: 40) {
+                Button(action: { PistaFunctions().phoneCallAction(self.person.phone_number) }) {
                     Image(systemName: "phone")
                         .imageScale(.small)
                         .accessibility(label: Text("Call"))
                 }
-                Spacer()
-                Button(action: { print("contact btn tapped") }) {
-                    Image(systemName: "text.bubble")
-                        .imageScale(.small)
-                        .accessibility(label: Text("Text Message"))
-                }.foregroundColor(Color("gray"))
-                Spacer()
-                Button(action: { print("contact btn tapped") }) {
-                    Image(systemName: "paperplane")
+                Button(action: { PistaFunctions().openUrl("mailto:\(self.person.email)") }) {
+                    Image(systemName: "envelope")
                         .imageScale(.small)
                         .accessibility(label: Text("Email"))
-                }.foregroundColor(Color("gray"))
-                Spacer()
-                Button(action: { print("contact btn tapped") }) {
-                    Image(systemName: "bubble.left.and.bubble.right")
-                        .imageScale(.small)
-                        .accessibility(label: Text("Whatsapp"))
-                }.foregroundColor(Color("gray"))
+                }
+//                Spacer()
+//                Button(action: { print("contact btn tapped") }) {
+//                    Image(systemName: "text.bubble")
+//                        .imageScale(.small)
+//                        .accessibility(label: Text("Text Message"))
+//                }.foregroundColor(Color("gray"))
+//                Spacer()
+//                Button(action: { print("contact btn tapped") }) {
+//                    Image(systemName: "bubble.left.and.bubble.right")
+//                        .imageScale(.small)
+//                        .accessibility(label: Text("Whatsapp"))
+//                }.foregroundColor(Color("gray"))
             }
             .padding(.top, 10)
             .padding(.bottom, 5)
@@ -172,15 +171,6 @@ struct LBRowView: View {
         .cornerRadius(10)
     }
 }
-
-private func phoneCallAction(_ n: String) {
-    if let number = URL(string: "tel://\(n)") {
-        if UIApplication.shared.canOpenURL(number) {
-            UIApplication.shared.open(number, options: [:], completionHandler: nil)
-        }
-    }
-}
-
 
 // MARK: - DATE HELPERS: format dates
 private func formatDateTime(_ date: String) -> String {
