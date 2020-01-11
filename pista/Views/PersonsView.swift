@@ -11,6 +11,7 @@ import SwiftUI
 struct PersonsView: View {
 
     @ObservedObject var persons = PersonsViewModel()
+    @EnvironmentObject var userAccount: UserAccount
 
     @State var showAddSheet: Bool = false
 
@@ -37,6 +38,10 @@ struct PersonsView: View {
                             .foregroundColor(Color.gray)
                             .padding()
                     }
+                } else if !persons.loading && persons.error.error == "Signature has expired" {
+                    Text("Your session has expired")
+                        .font(.footnote)
+                        .foregroundColor(Color("danger"))
                 } else {
                     VStack(alignment: .leading) {
                         HStack(alignment: .top, spacing: 10) {
@@ -92,6 +97,14 @@ struct PersonsView: View {
         .sheet(isPresented: $showAddSheet) {
             NewPersonView()
                 .environmentObject(self.persons)
+        }
+        .alert(isPresented: self.$persons.showSessionAlert) {
+            Alert(
+                title: Text("Your session has expired"),
+                message: Text("You will be redirected to log in again"),
+                dismissButton: .default(Text("Ok!")) {
+                    self.userAccount.clearKeychain()
+                })
         }
     }
 }

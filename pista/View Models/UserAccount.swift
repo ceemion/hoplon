@@ -107,17 +107,21 @@ final class UserAccount: ObservableObject {
     func logout() {
         HttpService().logout { (status) in
             if status < 300 {
-                let removedToken: Bool = KeychainWrapper.standard.removeObject(forKey: "userJWToken")
-                let removedId: Bool = KeychainWrapper.standard.removeObject(forKey: "userId")
-
-                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "firstName")
-                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "lastName")
-                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "email")
-                let _: Bool = KeychainWrapper.standard.removeObject(forKey: "phone")
-
-                self.authenticated = removedToken && removedId ? false : true
+                self.clearKeychain()
                 self.redirectToLogin = false
             }
         }
+    }
+
+    func clearKeychain() {
+        let removedToken: Bool = KeychainWrapper.standard.removeObject(forKey: "userJWToken")
+        let removedId: Bool = KeychainWrapper.standard.removeObject(forKey: "userId")
+
+        let _: Bool = KeychainWrapper.standard.removeObject(forKey: "firstName")
+        let _: Bool = KeychainWrapper.standard.removeObject(forKey: "lastName")
+        let _: Bool = KeychainWrapper.standard.removeObject(forKey: "email")
+        let _: Bool = KeychainWrapper.standard.removeObject(forKey: "phone")
+
+        self.authenticated = removedToken && removedId ? false : true
     }
 }

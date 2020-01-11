@@ -20,6 +20,9 @@ final class PersonsViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var phonenumber: String = ""
 
+    @Published var error = Error(error: "")
+    @Published var showSessionAlert: Bool = false
+
     init() {
         fetch()
     }
@@ -30,9 +33,18 @@ final class PersonsViewModel: ObservableObject {
     }
 
     func fetchAggregators() {
-        HttpService().getAggregators { (aggregators) in
-            self.totalLent = aggregators.total_lent
-            self.totalBorrowed = aggregators.total_borrowed
+        HttpService().getAggregators { (aggregators, error) in
+            if !error.error.isEmpty {
+                self.error = error
+                self.loading = false
+
+                if error.error == "Signature has expired" {
+                    self.showSessionAlert = true
+                }
+            } else {
+                self.totalLent = aggregators.total_lent
+                self.totalBorrowed = aggregators.total_borrowed
+            }
         }
     }
 

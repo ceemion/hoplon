@@ -95,7 +95,7 @@ class HttpService {
         task.resume()
     }
 
-    func getAggregators(_ completion: @escaping (Aggregator) -> ()) {
+    func getAggregators(_ completion: @escaping (Aggregator, Error) -> ()) {
          let url = URL(string: aggregatorsUrl)!
 
         var request = URLRequest(url: url)
@@ -116,12 +116,18 @@ class HttpService {
 
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode) else {
-                    print("my Server Response")
-                    print(response as Any)
+                    do {
+                        let jsonResult:NSDictionary! = try JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
+                        let errorString = (jsonResult as AnyObject)["error"]!! as! String
 
-                    //DispatchQueue.main.async {
-                        //self.handleServerError(response)
-                    //}
+                        print("server res - get aggregators: ", errorString)
+
+                        DispatchQueue.main.async {
+                            completion(Aggregator(total_lent: 0, total_borrowed: 0), Error(error: errorString))
+                        }
+                    } catch {
+                        print("catch nsdic do in get aggregators")
+                    }
 
                     return
             }
@@ -130,7 +136,7 @@ class HttpService {
                 //print("la json: ", json)
 
                 DispatchQueue.main.async {
-                    completion(json)
+                    completion(json, Error(error: ""))
                 }
             }
         }
@@ -163,7 +169,7 @@ class HttpService {
 
                 do {
                     let jsonResult:NSDictionary! = try JSONSerialization.jsonObject(with: data!, options:JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary
-                    print("server res: ", (jsonResult as AnyObject)["error"]!! as! String)
+                    print("server res - get persons: ", (jsonResult as AnyObject)["error"]!! as! String)
                 } catch {
                     print("catch nsdic do")
                 }
