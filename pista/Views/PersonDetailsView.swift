@@ -28,18 +28,13 @@ struct PersonDetailsView: View {
                         .imageScale(.small)
                         .accessibility(label: Text("Email"))
                 }
-//                Spacer()
-//                Button(action: { print("contact btn tapped") }) {
-//                    Image(systemName: "text.bubble")
-//                        .imageScale(.small)
-//                        .accessibility(label: Text("Text Message"))
-//                }.foregroundColor(Color("gray"))
-//                Spacer()
-//                Button(action: { print("contact btn tapped") }) {
-//                    Image(systemName: "bubble.left.and.bubble.right")
-//                        .imageScale(.small)
-//                        .accessibility(label: Text("Whatsapp"))
-//                }.foregroundColor(Color("gray"))
+                Image("whatsapp.icon.2")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 25, height: 25)
+                    .onTapGesture {
+                        PistaFunctions().openUrl("https://api.whatsapp.com/send?phone=234\(self.person.phone_number)")
+                }
             }
             .padding(.top, 10)
             .padding(.bottom, 5)
